@@ -22,7 +22,7 @@ This is the durable strategic context for future Codex sessions. Keep it concise
 
 ## Repository role
 
-Early context-establishment stage. The repository is intended to become a persistent private system for strategic understanding, planning, and project tracking. Its practical structure and operating cadence are not yet decided.
+Transitioning from high-level context establishment to operational strategy. The repository is intended to be a persistent private system for strategic understanding, planning, and project tracking. Abstract philosophy should not be expanded further unless a missing assumption blocks practical progress.
 
 ## Strategic objective and horizons
 
@@ -30,6 +30,8 @@ Early context-establishment stage. The repository is intended to become a persis
 - **Roughly the next year:** remove the founder's current financial bottleneck by securing sufficient, reasonably stable income or runway while continuing to build an AI-safety career. Success should make it comfortable to cover living costs, career-related travel such as conferences, useful equipment and workspace, and preserve the option to relocate when strategically valuable.
 - **Roughly the next 3–5 years:** broaden from financial security toward maximizing the founder's power and capacity to contribute to solving AI Safety.
 - Basic income and financial security are current bottlenecks and instrumental goals, not the terminal objective.
+- The near-term financial threshold must be calculated from actual expenses and a desired margin rather than set arbitrarily. Sweden is the current base and **SEK** is the default currency for present-day planning.
+- A 6–12 month runway is a useful longer-term aspiration, but it is not a prerequisite for pursuing sufficiently valuable opportunities.
 
 ## Power model
 
@@ -46,13 +48,46 @@ Specific resources such as compute, audience, and reputation should generally be
 
 The constraint set is not yet complete. Until it is refined, strategies should by default be legal, ethically defensible, compatible with protecting the founder's health, and not counterproductive to AI Safety. Maximizing power does not mean maximizing it regardless of cost; principles and tradeoff rules remain to be developed.
 
+## Resource-acquisition strategies
+
+The current strategy set is not mutually exclusive; Eshkere Strategy should compare and combine these routes:
+
+1. **Employment** — preferably AI-safety-aligned roles in organizations or teams, including field-building organizations. Generalist, operations, community, communications, and project roles may currently have lower experience barriers than research roles, while advanced or technical roles should remain in scope when realistic. Contracting and consulting belong here.
+2. **Career Transition Grants** — funding the founder personally while transitioning toward higher-impact AI-safety work.
+3. **Project Funding** — grants or sponsorship for AI-safety projects the founder creates or helps lead.
+4. **Fellowships / Internships / Residencies / Support Programs** — including educational funding, scholarships, stipends, public or student support, and similar programs that provide income or runway while relevant capabilities are developed.
+5. **Project Revenue & Donations** — independently generating resources through projects such as an AI-safety YouTube channel, events, services or products, donations, prizes or bounties, or entrepreneurship.
+
+These resource-acquisition strategies are distinct from broader **career paths**, which may include generalist work, field-building, technical AI safety, governance or policy, entrepreneurship, and other AI-safety-relevant directions.
+
+## Information handling
+
+- Use approximate ranges rather than unnecessarily precise personal financial data.
+- Approximate monthly burn, savings or runway in months, and target income ranges may be stored in this private repository when strategically useful.
+- Never commit passwords, API keys, banking information, identity documents or numbers, precise addresses, private medical records, or confidential information supplied by other people.
+- Use the gitignored local `private/` directory for genuinely sensitive notes that must never be pushed to GitHub.
+
+## Operational model
+
+Use this sequence as the working strategy model:
+
+**Current state → bottlenecks → strategies → opportunities → prioritization → next actions**
+
+Information still needed to populate it:
+
+1. **Financial current state** — approximate essential and normal monthly expenses in SEK, reliable income or support, liquid savings/runway, fixed obligations, and available margin for career investment.
+2. **Career current state** — current work or study situation, relevant skills and evidence of execution, AI-safety experience, available time, location/work-authorization constraints, and relocation flexibility.
+3. **Active strategies and opportunities** — concrete jobs, grants, funded projects, programs, and revenue experiments already active or plausible, including status and deadlines.
+4. **Observed bottlenecks** — evidence about what is currently preventing income or career progress, rather than assumed causes.
+5. **Prioritization inputs** — expected AI-safety value, financial value, probability, time to results, capability and influence gains, option value, opportunity cost, health burden, and downside risk.
+6. **Execution state** — near-term deadlines, available weekly capacity, dependencies, and the smallest next action for each priority.
+
 ## Working hypotheses
 
 - Eshkere could combine public-good work that improves Health with projects undertaken because they are worthwhile Games.
 - AI Safety may become a major part of Eshkere's work.
 - Eshkere may eventually become a formal organization, but this is not decided.
 - The four-part power model may become the organizing frame for resource inventories and strategic evaluation, but its operational measures and relative priorities are not yet decided.
-- Eshkere Strategy may eventually use structured goal, resource, bottleneck, action, and project records; the useful format is not yet decided.
 - If a website is later wanted, it could become an organization homepage, manifesto/worldview, project hub, or some combination.
 
 ## Decisions
@@ -69,22 +104,31 @@ The constraint set is not yet complete. Until it is refined, strategies should b
 - 2026-08-15: Prioritize removing the financial bottleneck over roughly the next year while continuing to build an AI-safety career; treat income as a means rather than the terminal objective.
 - 2026-08-15: Use Capital, Capabilities, Productivity, and Influence as the current top-level categories of power.
 - 2026-08-15: Apply provisional default constraints: legality, ethical defensibility, protection of health, and compatibility with AI Safety.
+- 2026-08-15: Calculate the near-term financial threshold from the founder's actual budget and desired margin; do not hard-code an arbitrary income or runway target. Use SEK by default for current planning.
+- 2026-08-15: Treat 6–12 months of runway as a useful longer-term aspiration, not a prerequisite for pursuing sufficiently valuable opportunities.
+- 2026-08-15: Compare and combine five resource-acquisition strategies: Employment, Career Transition Grants, Project Funding, Fellowships / Internships / Residencies / Support Programs, and Project Revenue & Donations.
+- 2026-08-15: Keep resource-acquisition strategies distinct from broader AI-safety career paths.
+- 2026-08-15: Use approximate financial ranges in the private repository when useful, exclude specified sensitive data from Git, and keep genuinely sensitive notes in a gitignored local `private/` directory.
+- 2026-08-15: Shift active work to **Current state → bottlenecks → strategies → opportunities → prioritization → next actions**; stop expanding abstract philosophy unless it blocks progress.
 
-## Open questions
+## Active operational questions
+
+- What are the founder's approximate monthly expenses, reliable income/support, savings/runway, fixed obligations, and career-investment margin in SEK?
+- What is the founder's current career, capability, time, location, and work-authorization baseline?
+- Which concrete opportunities are already active or plausible across the five resource-acquisition strategies, and what are their statuses and deadlines?
+- Which bottlenecks are supported by current evidence?
+- Which prioritization criteria and tradeoffs should dominate during the next year?
+- What would effective contribution to solving AI Safety mean in practice, and what theory of change should guide opportunity comparisons?
+
+## Deferred questions about broader Eshkere
 
 - Is “maximize Health and play Games” primarily a personal philosophy, an organizational mission, a decision framework, a public message, or several of these?
 - Whose Health is in scope, and what would “maximize” mean in practice?
 - What principles govern the relationship or tradeoffs between Health and Games?
 - What is the intended relationship, if any, among Eshkere, Eshkere Strategy, the founder's public identity, and future projects?
-- What would effective contribution to solving AI Safety mean in practice, and what theory of change should guide the strategy?
-- What concrete financial threshold would count as removing the next-year bottleneck: required income, desired runway, deadline, and location assumptions?
-- What is the founder's current baseline across Capital, Capabilities, Productivity, and Influence?
-- Which income and career paths could relieve the financial bottleneck while advancing or preserving the AI-safety trajectory, and what are their tradeoffs?
 - Which projects and plans currently exist, and what is their status?
-- Beyond finances, what are the founder's current bottlenecks, uncertainties, and highest-leverage actions?
 - What clearer principles should govern ethical, health, and AI-safety tradeoffs when strategies conflict?
 - What structure and review cadence would make this repository genuinely useful as a strategic system?
-- Which information must remain private, and could any part eventually be public?
 
 ## Website status
 
@@ -96,4 +140,4 @@ No source material has been added yet.
 
 ## Next step
 
-Quantify the near-term financial objective, map the founder's current baseline across the four power categories, and identify candidate income/career paths. Use that information to choose the first concrete strategic actions and the minimum useful working structure for this repository.
+Collect the first operational snapshot: approximate financial baseline in SEK, current career/capacity constraints, and active opportunities across the five resource-acquisition strategies. Then identify the evidenced bottlenecks and rank the next actions.
