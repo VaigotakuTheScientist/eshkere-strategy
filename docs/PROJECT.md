@@ -52,7 +52,7 @@ The constraint set is not yet complete. Until it is refined, strategies should b
 
 The current strategy set is not mutually exclusive; Eshkere Strategy should compare and combine these routes:
 
-1. **Employment** — preferably AI-safety-aligned roles in organizations or teams, including field-building organizations. Generalist, operations, community, communications, and project roles may currently have lower experience barriers than research roles, while advanced or technical roles should remain in scope when realistic. Contracting and consulting belong here.
+1. **Employment** — preferably AI-safety-aligned roles in organizations or teams, including field-building organizations. The founder is particularly interested in generalist, operations, community, communications, and project roles, while advanced or technical roles should remain in scope when realistic. Contracting and consulting belong here.
 2. **Career Transition Grants** — funding the founder personally while transitioning toward higher-impact AI-safety work.
 3. **Project Funding** — grants or sponsorship for AI-safety projects the founder creates or helps lead.
 4. **Fellowships / Internships / Residencies / Support Programs** — including educational funding, scholarships, stipends, public or student support, and similar programs that provide income or runway while relevant capabilities are developed.
@@ -75,9 +75,9 @@ Use this sequence as the working strategy model:
 
 Information still needed to populate it:
 
-1. **Financial current state** — approximate essential and normal monthly expenses in SEK, reliable income or support, liquid savings/runway, fixed obligations, and available margin for career investment.
-2. **Career current state** — current work or study situation, relevant skills and evidence of execution, AI-safety experience, available time, location/work-authorization constraints, and relocation flexibility.
-3. **Active strategies and opportunities** — concrete jobs, grants, funded projects, programs, and revenue experiments already active or plausible, including status and deadlines.
+1. **Financial current state** — approximate essential and normal monthly expenses in SEK, reliable income or support and when it may end, liquid savings/runway, fixed obligations, available margin for career investment, and likely major one-off costs during the next year such as travel, equipment/workspace, or relocation.
+2. **Career current state** — current work or study situation, relevant skills and evidence of execution, AI-safety experience, available time, location/work-authorization constraints, relocation flexibility, CV and work samples, references or possible referrers, relevant relationships, reputation or audience, and current projects.
+3. **Active strategies and opportunities** — concrete jobs, grants, funded projects, programs, and revenue experiments already active or seriously plausible. For each, capture its route, stage, deadline or decision timing, eligibility or prerequisite blockers, expected support and duration, approximate effort, AI-safety relevance, and next action.
 4. **Observed bottlenecks** — evidence about what is currently preventing income or career progress, rather than assumed causes.
 5. **Prioritization inputs** — expected AI-safety value, financial value, probability, time to results, capability and influence gains, option value, opportunity cost, health burden, and downside risk.
 6. **Execution state** — near-term deadlines, available weekly capacity, dependencies, and the smallest next action for each priority.
@@ -87,6 +87,7 @@ Information still needed to populate it:
 - Eshkere could combine public-good work that improves Health with projects undertaken because they are worthwhile Games.
 - AI Safety may become a major part of Eshkere's work.
 - Eshkere may eventually become a formal organization, but this is not decided.
+- Generalist, operations, community, communications, and project roles may currently have lower experience barriers than research roles; this should be tested against actual opportunities rather than assumed.
 - The four-part power model may become the organizing frame for resource inventories and strategic evaluation, but its operational measures and relative priorities are not yet decided.
 - If a website is later wanted, it could become an organization homepage, manifesto/worldview, project hub, or some combination.
 
@@ -116,8 +117,10 @@ Information still needed to populate it:
 - What are the founder's approximate monthly expenses, reliable income/support, savings/runway, fixed obligations, and career-investment margin in SEK?
 - What is the founder's current career, capability, time, location, and work-authorization baseline?
 - Which concrete opportunities are already active or plausible across the five resource-acquisition strategies, and what are their statuses and deadlines?
+- Which current projects could provide income, AI-safety impact, portfolio evidence, useful relationships, or fundable proposals?
 - Which bottlenecks are supported by current evidence?
 - Which prioritization criteria and tradeoffs should dominate during the next year?
+- What clearer principles should govern ethical, health, and AI-safety tradeoffs when strategies conflict?
 - What would effective contribution to solving AI Safety mean in practice, and what theory of change should guide opportunity comparisons?
 
 ## Deferred questions about broader Eshkere
@@ -126,8 +129,6 @@ Information still needed to populate it:
 - Whose Health is in scope, and what would “maximize” mean in practice?
 - What principles govern the relationship or tradeoffs between Health and Games?
 - What is the intended relationship, if any, among Eshkere, Eshkere Strategy, the founder's public identity, and future projects?
-- Which projects and plans currently exist, and what is their status?
-- What clearer principles should govern ethical, health, and AI-safety tradeoffs when strategies conflict?
 - What structure and review cadence would make this repository genuinely useful as a strategic system?
 
 ## Website status
