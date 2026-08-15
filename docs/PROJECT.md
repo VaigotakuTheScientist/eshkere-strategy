@@ -24,6 +24,11 @@ This is the durable strategic context for future Codex sessions. Keep it concise
 
 Transitioning from high-level context establishment to operational strategy. The repository is intended to be a persistent private system for strategic understanding, planning, and project tracking. Abstract philosophy should not be expanded further unless a missing assumption blocks practical progress.
 
+Current working inventories:
+
+- `docs/FINANCES.md` — financial inputs, calculation definitions, and eventual burn, income-target, and runway scenarios.
+- `docs/OPPORTUNITIES.md` — resource-acquisition searches, existing projects and activities, and concrete opportunities or applications.
+
 ## Strategic objective and horizons
 
 - **Ultimate objective:** contribute as effectively as possible to solving AI Safety.
@@ -82,6 +87,15 @@ Information still needed to populate it:
 5. **Prioritization inputs** — expected AI-safety value, financial value, probability, time to results, capability and influence gains, option value, opportunity cost, health burden, and downside risk.
 6. **Execution state** — near-term deadlines, available weekly capacity, dependencies, and the smallest next action for each priority.
 
+## Initial operational snapshot
+
+- The founder currently lives and studies in Sweden. Essential spending, normal spending, income/support, liquid savings, and runway have not yet been measured; no numerical target should be inferred from the current `TBD` values.
+- The financial model must eventually calculate essential monthly burn, normal monthly burn, minimum acceptable income, comfortable target income, current runway, and desired runway.
+- Potential one-off costs include computer equipment, AI-safety conferences and career travel, workspace improvements, and opportunity-contingent relocation such as London or the Bay Area.
+- The five resource-acquisition routes have initial search clusters, but there is not yet a centralized list of named jobs, grants, programs, funders, applications, or deadlines.
+- Existing activities or project areas that may matter include Safe AI Sweden, AI-safety field-building or community work, events and convenings, and possible AI-safety media or content. Their boundaries, status, resource needs, and priority remain to be inventoried.
+- Income is not the sole optimization target. Financial pressure should be removed in a way that preserves or increases the founder's ability to contribute to AI Safety.
+
 ## Working hypotheses
 
 - Eshkere could combine public-good work that improves Health with projects undertaken because they are worthwhile Games.
@@ -111,13 +125,17 @@ Information still needed to populate it:
 - 2026-08-15: Keep resource-acquisition strategies distinct from broader AI-safety career paths.
 - 2026-08-15: Use approximate financial ranges in the private repository when useful, exclude specified sensitive data from Git, and keep genuinely sensitive notes in a gitignored local `private/` directory.
 - 2026-08-15: Shift active work to **Current state → bottlenecks → strategies → opportunities → prioritization → next actions**; stop expanding abstract philosophy unless it blocks progress.
+- 2026-08-15: Maintain separate structured inventories for finances and for opportunities/projects/applications; keep unknown values explicitly `TBD` until measured.
+- 2026-08-15: Calculate essential burn, normal burn, minimum and comfortable income targets, and current and desired runway before treating financial targets as settled.
+- 2026-08-15: Do not optimize for income alone; evaluate financial strategies by whether they relieve pressure while preserving or increasing AI-safety contribution capacity.
+- 2026-08-15: Keep acquisition route, career path, and record type distinct when tracking opportunities.
 
 ## Active operational questions
 
-- What are the founder's approximate monthly expenses, reliable income/support, savings/runway, fixed obligations, and career-investment margin in SEK?
+- What are the inputs required by `docs/FINANCES.md`: approximate recurring expenses, dated income/support, usable liquidity, obligations, and later one-off scenarios and target margins?
 - What is the founder's current career, capability, time, location, and work-authorization baseline?
-- Which concrete opportunities are already active or plausible across the five resource-acquisition strategies, and what are their statuses and deadlines?
-- Which current projects could provide income, AI-safety impact, portfolio evidence, useful relationships, or fundable proposals?
+- Which named opportunities or applications are already active across the five resource-acquisition routes, and what are their stages and deadlines?
+- What are the scope, status, commitments, results, resource needs, and next milestones of the existing projects and activities listed in `docs/OPPORTUNITIES.md`?
 - Which bottlenecks are supported by current evidence?
 - Which prioritization criteria and tradeoffs should dominate during the next year?
 - What clearer principles should govern ethical, health, and AI-safety tradeoffs when strategies conflict?
@@ -141,4 +159,4 @@ No source material has been added yet.
 
 ## Next step
 
-Collect the first operational snapshot: approximate financial baseline in SEK, current career/capacity constraints, and active opportunities across the five resource-acquisition strategies. Then identify the evidenced bottlenecks and rank the next actions.
+Complete the first small intake in `docs/FINANCES.md` and record any urgent named opportunities or applications in `docs/OPPORTUNITIES.md`. Do not prioritize the broad search clusters until concrete records and evidenced bottlenecks exist.
