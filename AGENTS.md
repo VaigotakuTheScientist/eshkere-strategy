@@ -6,6 +6,7 @@ Read `docs/PROJECT.md` before proposing or making strategic or project changes.
 - Within Eshkere Strategy, treat AI Safety as the ultimate objective and power as instrumental; do not project that objective onto the broader Eshkere concept.
 - Treat Eshkere as a broader, evolving idea with possible future projects or an organization. Keep it distinct from Eshkere Strategy unless the user decides otherwise.
 - Do not turn underspecified ideas into settled facts. Record uncertainty, alternatives, and open questions explicitly.
+- Do not block operational work merely because a personal fact is unknown. When a decision is reversible, choose a conservative working default or range, label it as an estimate or hypothesis, and keep confirmed personal facts distinct. Ask only when authority, irreversibility, or material risk genuinely requires the user.
 - Prioritize operational work using: **Current state → bottlenecks → strategies → opportunities → prioritization → next actions**. Do not expand the abstract Eshkere philosophy unless a missing assumption blocks progress.
 - Keep `docs/PROJECT.md` concise and current whenever the user provides durable context or makes a strategic or project decision.
 - Keep detailed financial inputs and calculations in `docs/FINANCES.md`, and opportunity, project, and application records in `docs/OPPORTUNITIES.md`.
