@@ -1,6 +1,6 @@
 # Eshkere Strategy financial inventory
 
-Last updated: 2026-08-15
+Last updated: 2026-08-16
 
 Status: **rough initial snapshot**. Unknown values are deliberately marked `TBD`; no figure here should yet be treated as a settled target.
 
@@ -13,8 +13,8 @@ Build the minimum financial model needed to remove financial pressure while pres
 - Use approximate **SEK ranges**, an `as of` date, and confidence (`high`, `medium`, `low`, or `TBD`).
 - Distinguish `0`, `TBD`, and an expense paid directly by someone else.
 - Record generic source labels rather than unnecessary identifying or account information.
-- Because tracked files are public, add personal financial values here only after an explicit decision that those ranges may be public.
-- Keep genuinely sensitive details in the gitignored local `private/` directory.
+- The tracked file is public, and the user has explicitly approved adding useful approximate personal financial ranges here.
+- Avoid unnecessary precision; keep any particular value in the gitignored local `private/` directory if the user requests privacy or publication would create material risk without strategic value.
 
 ## Current snapshot
 

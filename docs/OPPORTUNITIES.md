@@ -1,6 +1,6 @@
 # Eshkere Strategy opportunity inventory
 
-Last updated: 2026-08-15
+Last updated: 2026-08-16
 
 Status: **initial incomplete inventory**. Search areas and project clusters are not concrete opportunities and must not be ranked as though they were applications with known terms.
 
@@ -8,7 +8,7 @@ Status: **initial incomplete inventory**. Search areas and project clusters are 
 
 Centralize existing AI-safety career opportunities, projects, applications, and serious leads before identifying bottlenecks or prioritizing next actions.
 
-Because this tracked inventory is public, do not record confidential conversations, non-public opportunities, private contact details, or other sensitive information here; keep those details in the gitignored local `private/` directory.
+This tracked inventory is public, and the user has explicitly approved adding useful personal opportunity and application details. Do not record private contact details, confidential conversations, third-party-confidential information, or details whose publication would create material risk without strategic value; keep those in the gitignored local `private/` directory.
 
 ## Record model
 

@@ -1,6 +1,6 @@
 # Eshkere Strategy project context
 
-Last updated: 2026-08-15
+Last updated: 2026-08-16
 
 ## Purpose of this document
 
@@ -22,7 +22,7 @@ This is the durable strategic context for future Codex sessions. Keep it concise
 
 ## Repository role
 
-Transitioning from high-level context establishment to operational strategy. The repository is intended to be a persistent system for strategic understanding, planning, and project tracking. The GitHub repository is public; genuinely sensitive material belongs only in the gitignored local `private/` directory. Abstract philosophy should not be expanded further unless a missing assumption blocks practical progress.
+Transitioning from high-level context establishment to operational strategy. The repository is intended to be a persistent system for strategic understanding, planning, and project tracking. The GitHub repository is public; genuinely sensitive material and anything the user specifically wants kept private belong only in the gitignored local `private/` directory. Abstract philosophy should not be expanded further unless a missing assumption blocks practical progress.
 
 Current working inventories:
 
@@ -68,9 +68,10 @@ These resource-acquisition strategies are distinct from broader **career paths**
 ## Information handling
 
 - Use approximate ranges rather than unnecessarily precise personal financial data.
-- Treat all tracked content as public. Approximate monthly burn, savings or runway in months, target income ranges, and other personal strategic details may be committed only after an explicit decision that they may be public.
+- Treat all tracked content as public. The user has explicitly approved recording useful personal operational data—including approximate financial inputs and opportunity or application details—in the public repository.
+- Avoid unnecessary precision and keep any particular detail in `private/` when the user requests privacy or when publication would create material risk without strategic value.
 - Never commit passwords, API keys, banking information, identity documents or numbers, precise addresses, private medical records, or confidential information supplied by other people.
-- Use the gitignored local `private/` directory for genuinely sensitive notes that must never be pushed to GitHub.
+- Use the gitignored local `private/` directory for genuinely sensitive notes and anything the user wants kept off GitHub.
 
 ## Operational model
 
@@ -130,6 +131,7 @@ Information still needed to populate it:
 - 2026-08-15: Do not optimize for income alone; evaluate financial strategies by whether they relieve pressure while preserving or increasing AI-safety contribution capacity.
 - 2026-08-15: Keep acquisition route, career path, and record type distinct when tracking opportunities.
 - 2026-08-16: Make the GitHub repository public. Treat every tracked file as public and keep genuinely sensitive or non-public details in the ignored local `private/` directory.
+- 2026-08-16: The user explicitly permits useful personal operational data in the public repository, including approximate financial ranges and opportunity or application details; the listed high-risk and third-party-confidential exclusions still apply.
 
 ## Active operational questions
 
