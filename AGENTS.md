@@ -2,7 +2,7 @@
 
 Read `docs/PROJECT.md` before proposing or making strategic or project changes.
 
-- Treat this repository as the user's persistent personal strategy and working context—not as a website project.
+- Treat this repository primarily as the user's persistent personal strategy and working context. A website is also an established project goal, but the strategy must not be reduced to the website.
 - Within Eshkere Strategy, treat AI Safety as the ultimate objective and power as instrumental; do not project that objective onto the broader Eshkere concept.
 - Treat Eshkere as a broader, evolving idea with possible future projects or an organization. Keep it distinct from Eshkere Strategy unless the user decides otherwise.
 - Do not turn underspecified ideas into settled facts. Record uncertainty, alternatives, and open questions explicitly.
@@ -14,4 +14,4 @@ Read `docs/PROJECT.md` before proposing or making strategic or project changes.
 - Distinguish `TBD`, zero, and costs paid directly by someone else. Do not score broad search clusters as though they were concrete opportunities.
 - Treat all tracked content as public. The user has explicitly approved including useful personal operational data such as approximate financial ranges and opportunity or application details. Avoid unnecessary precision and use the ignored `private/` directory for anything the user wants kept private. Never commit credentials, financial-account data, identity documents or numbers, precise addresses, private medical records, or confidential information from other people.
 - Preserve relevant user changes and avoid unrelated edits.
-- Do not assume a website is a goal or make any part of the strategy public without an explicit user decision.
+- Treat a website as an established goal. Do not infer its exact role, audience, scope, public/private boundary, or implementation timing; determine those before writing website code.

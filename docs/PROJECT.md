@@ -6,7 +6,7 @@ Last updated: 2026-08-16
 
 This repository is **Eshkere Strategy**: Vadym's persistent personal strategy and working context. It exists to understand goals, map resources and power, identify bottlenecks, compare strategies and opportunities, choose actions, and track projects across Codex sessions.
 
-It is not currently a website project. Keep this document concise and durable; keep detailed calculations in `docs/FINANCES.md` and live opportunity/project records in `docs/OPPORTUNITIES.md`.
+A website is an established project goal, while this repository's current primary role is the persistent strategy system. The website's exact product role and implementation timing remain undecided. Keep this document concise and durable; keep detailed calculations in `docs/FINANCES.md` and live opportunity/project records in `docs/OPPORTUNITIES.md`.
 
 ## Confirmed context
 
@@ -139,6 +139,7 @@ This is a reversible operating model, not a settled description of Safe AI Swede
 - 2026-08-16: Make the GitHub repository public and permit useful approximate personal operational data while retaining the listed exclusions.
 - 2026-08-16: Delegate missing-input choices to Codex and ChatGPT; make reversible decisions under explicit uncertainty instead of treating facts as “only the user can supply.”
 - 2026-08-16: Record the first financial screens, live opportunity portfolio, and execution queue as current operational hypotheses/state—not permanent strategy decisions.
+- 2026-08-16: Treat a website as an established goal, while leaving its exact role, audience, scope, and implementation timing open until product discovery resolves them.
 
 ## Open questions, not current blockers
 
@@ -149,6 +150,6 @@ This is a reversible operating model, not a settled description of Safe AI Swede
 - What stronger principles should govern hard ethical, health, and AI-safety tradeoffs?
 - What review cadence will make the strategy self-correcting?
 
-## Deferred website status
+## Website goal
 
-A website is not an active deliverable. If that changes, decide its purpose, audience, public/private boundary, and relationship to Eshkere Strategy before implementation.
+A website is an established goal. It may become an organization homepage, manifesto/worldview, project hub, strategy interface, or some combination; none of those roles is settled. Before implementation, determine its audience, scope, public/private boundary, relationship to Eshkere Strategy and broader Eshkere, and the smallest useful first version. No website code has been started.
