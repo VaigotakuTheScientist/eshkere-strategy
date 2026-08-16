@@ -1,0 +1,163 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import StrategyCard from '../components/StrategyCard.astro';
+import { acquisitionRoutes, operatingLoop, powerCategories, site } from '../data/site';
+
+const title = 'Strategy — Eshkere Strategy';
+const description = 'How Eshkere Strategy turns current bottlenecks, resources, opportunities, and next actions into a practical plan for increasing AI-safety impact.';
+
+const principles = [
+  'AI-safety impact is the objective; income is a means.',
+  'Prefer options that improve multiple forms of power simultaneously.',
+  'Preserve option value when uncertainty is high.',
+  'Use cheap experiments before large commitments.',
+  'Treat assumptions as reversible.',
+  'Replace estimates with observed evidence.',
+  'Account for time, health, stress, opportunity cost, and downside risk.',
+  'Strategies should be legal, ethically defensible, and compatible with AI safety.',
+];
+
+const exclusions = [
+  'A claim that money or power are intrinsically valuable',
+  'A fixed five-year plan',
+  'A commitment to one AI-safety career path',
+  'A complete representation of my life or values',
+  'The broader Eshkere philosophy',
+];
+---
+
+<BaseLayout {title} {description} currentPath="/strategy">
+  <header class="page-hero shell">
+    <p class="eyebrow">Eshkere Strategy / working model</p>
+    <h1>The strategy</h1>
+    <p>Eshkere Strategy is my attempt to answer a practical question: given where I am now, what should I accumulate, build, pursue, or stop doing to maximize my expected ability to contribute to AI safety?</p>
+  </header>
+
+  <section class="content-section shell" aria-labelledby="horizons-heading">
+    <SectionHeading id="horizons-heading" label="Direction / 01" title="Objective and horizons" />
+    <div class="section-body horizon-grid">
+      <article>
+        <p class="horizon-time">Ultimate objective</p>
+        <h3>Effective contribution to solving AI safety.</h3>
+        <p>Everything else in the strategy is evaluated by how it changes my expected ability to help with that objective.</p>
+      </article>
+      <article>
+        <p class="horizon-time">Near-term horizon</p>
+        <h3>Remove the financial and runway bottleneck.</h3>
+        <p>Secure sufficient, reasonably stable support while continuing to build an AI-safety career.</p>
+      </article>
+      <article>
+        <p class="horizon-time">3–5 year horizon</p>
+        <h3>Increase overall power and capacity.</h3>
+        <p>Accumulate resources, capabilities, productivity, and influence that can be deployed toward consequential work.</p>
+      </article>
+      <p class="instrumental-note">Basic income is a current bottleneck—not the terminal objective.</p>
+    </div>
+  </section>
+
+  <section class="content-section shell" aria-labelledby="bottleneck-heading">
+    <SectionHeading id="bottleneck-heading" label="Constraint / 02" title="Current bottleneck" />
+    <div class="section-body split-copy">
+      <div>
+        <p class="lead-statement">Financial pressure narrows the set of actions I can take.</p>
+        <p>The target is not maximum income in isolation. It is enough dependable runway that ordinary living costs stop demanding disproportionate attention while valuable AI-safety opportunities become easier to pursue.</p>
+      </div>
+      <div>
+        <p class="mini-heading">Solving it should create</p>
+        <ul class="consequence-list">
+          <li>Less cognitive load from basic finances</li>
+          <li>Career travel when the expected value is high</li>
+          <li>Better equipment and working conditions</li>
+          <li>Ability to accept strategically valuable opportunities</li>
+          <li>Greater relocation optionality</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section shell" aria-labelledby="strategy-power-heading">
+    <SectionHeading id="strategy-power-heading" label="Resources / 03" title="Power model" intro="Power is the practical ability to make useful things happen. The categories interact; improving one can strengthen the others." />
+    <div class="section-body">
+      <div class="power-sequence" aria-label="Capital leads to capabilities, productivity, and influence">
+        {powerCategories.map((category, index) => (
+          <StrategyCard number={String(index + 1).padStart(2, '0')} title={category.title} description={category.description} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section shell" aria-labelledby="strategy-routes-heading">
+    <SectionHeading id="strategy-routes-heading" label="Inputs / 04" title="Resource-acquisition routes" />
+    <div class="section-body">
+      <ol class="route-list strategy-route-list">
+        {acquisitionRoutes.map((route, index) => (
+          <li>
+            <span class="route-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+            <h3>{route.title}</h3>
+            <p>{route.description}</p>
+          </li>
+        ))}
+      </ol>
+      <aside class="field-note">
+        <p class="memo-label">Important distinction</p>
+        <p>These describe how resources are acquired. They are different from career paths such as technical AI safety, governance, field-building, operations or generalist work, or entrepreneurship.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="content-section loop-section shell" aria-labelledby="loop-heading">
+    <SectionHeading id="loop-heading" label="Method / 05" title="Operating loop" intro="The model is deliberately compact: diagnose, compare, act, and update." />
+    <div class="section-body">
+      <figure class="loop-visual">
+        <img src={`${import.meta.env.BASE_URL}operating-loop.svg`} alt="Eshkere Strategy operating loop: current state, bottlenecks, strategies, opportunities, prioritization, and next actions, then repeat." width="1200" height="380" />
+      </figure>
+      <ol class="loop-visual-mobile" aria-label="Eshkere Strategy operating loop">
+        {operatingLoop.map((step, index) => (
+          <li class:list={{ 'is-action': index === operatingLoop.length - 1 }}>
+            <span>{String(index + 1).padStart(2, '0')}</span>
+            {step.title}
+          </li>
+        ))}
+      </ol>
+      <ol class="loop-grid">
+        {operatingLoop.map((step, index) => (
+          <li>
+            <span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+            <h3>{step.title}</h3>
+            <p>{step.description}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="content-section shell" aria-labelledby="principles-heading">
+    <SectionHeading id="principles-heading" label="Judgment / 06" title="Decision principles" />
+    <div class="section-body">
+      <ol class="principle-list">
+        {principles.map((principle, index) => (
+          <li><span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>{principle}</li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="content-section shell" aria-labelledby="not-heading">
+    <SectionHeading id="not-heading" label="Boundaries / 07" title="What this strategy is not" />
+    <div class="section-body">
+      <ul class="not-list">
+        {exclusions.map((item) => <li><span aria-hidden="true">Not</span>{item}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="closing-section shell" aria-labelledby="closing-heading">
+    <p class="section-label">From model to movement / 08</p>
+    <h2 id="closing-heading">Strategy is useful only if it changes action.</h2>
+    <div class="button-row">
+      <a class="button button-primary" href={`${site.links.home}#now`}>See what I’m doing now <span aria-hidden="true">→</span></a>
+      <a class="button button-secondary" href={site.links.githubRepository}>View the working repository <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+</BaseLayout>

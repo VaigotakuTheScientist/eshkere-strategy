@@ -76,7 +76,9 @@ The desired impression is serious, clear, high-agency, intellectually curious, a
 
 Use a warm off-white or near-white background, near-black text, one restrained accent color, subtle borders, strong system typography, generous whitespace, and cards only where they aid scanning. Use monospace labels sparingly for status and metadata. Do not request remote fonts.
 
-Do not use stock or generated imagery, decorative gradients, glassmorphism, particles, giant hero illustrations, carousels, autoplay, complex animation, or scroll-triggered effects. Motion is limited to simple hover and focus transitions and must respect `prefers-reduced-motion`.
+Keep the site text-led, with exactly two original repository-native vector illustrations: a Home hero power map showing Capital, Capabilities, Productivity, and Influence feeding capacity to contribute to AI Safety; and a Strategy-page operating-loop diagram showing the six stages and their feedback cycle. Both use the existing warm neutral, near-black, muted stroke, and restrained cobalt palette. The power map moves below the hero CTAs on mobile. The operating loop uses a readable vertical CSS presentation at narrow widths rather than shrinking the wide SVG. Use descriptive alternative text.
+
+Do not use imagery elsewhere in V1. Avoid stock photography, generated raster art, portraits, generic AI or sci-fi motifs, meeting photos, money or power clichés, 3D renders, photographic backgrounds, gradients masquerading as illustration, or icons for every card. Motion is limited to simple hover and focus transitions and must respect `prefers-reduced-motion`.
 
 Build mobile-first. At 320px, content must remain one-column without horizontal overflow. At wider sizes, use compact grids while preserving readable line lengths. Navigation stays simple without a hamburger unless necessary.
 

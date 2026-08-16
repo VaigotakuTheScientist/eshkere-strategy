@@ -1,0 +1,17 @@
+---
+import { site } from '../data/site';
+---
+
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div>
+      <strong>{site.name}</strong>
+      <span>{site.owner}</span>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href={site.links.strategy}>Strategy</a>
+      <a href={site.links.githubRepository}>GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+    <p>Public working strategy — expect updates.</p>
+  </div>
+</footer>

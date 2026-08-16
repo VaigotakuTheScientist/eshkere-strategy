@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+---
+
+<BaseLayout title="Page not found — Eshkere Strategy" description="The requested page could not be found." noindex>
+  <section class="not-found shell">
+    <p class="eyebrow">404 / Wrong turn</p>
+    <h1>Nothing strategic here.</h1>
+    <p>The page you were looking for does not exist. Return to the public strategy and choose the next useful action.</p>
+    <a class="button button-primary" href={site.links.home}>Back to Eshkere Strategy <span aria-hidden="true">→</span></a>
+  </section>
+</BaseLayout>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vaigotakuthescientist.github.io/eshkere-strategy/sitemap-index.xml
