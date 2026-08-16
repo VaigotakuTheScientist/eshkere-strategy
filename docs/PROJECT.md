@@ -6,7 +6,7 @@ Last updated: 2026-08-16
 
 This repository is **Eshkere Strategy**: Vadym's persistent personal strategy and working context. It exists to understand goals, map resources and power, identify bottlenecks, compare strategies and opportunities, choose actions, and track projects across Codex sessions.
 
-A website is an established project goal, while this repository's current primary role is the persistent strategy system. The website's exact product role and implementation timing remain undecided. Keep this document concise and durable; keep detailed calculations in `docs/FINANCES.md` and live opportunity/project records in `docs/OPPORTUNITIES.md`.
+The **active deliverable is the Eshkere Strategy public website V1**, while this repository's primary role remains the persistent strategy system. The website is a curated public interface that helps relevant AI-safety people quickly understand Vadym's direction, current work, and useful ways to interact with him. Keep this document concise and durable; keep detailed calculations in `docs/FINANCES.md`, live opportunity/project records in `docs/OPPORTUNITIES.md`, and the website product specification in `docs/WEBSITE.md`.
 
 ## Confirmed context
 
@@ -140,6 +140,7 @@ This is a reversible operating model, not a settled description of Safe AI Swede
 - 2026-08-16: Delegate missing-input choices to Codex and ChatGPT; make reversible decisions under explicit uncertainty instead of treating facts as “only the user can supply.”
 - 2026-08-16: Record the first financial screens, live opportunity portfolio, and execution queue as current operational hypotheses/state—not permanent strategy decisions.
 - 2026-08-16: Treat a website as an established goal, while leaving its exact role, audience, scope, and implementation timing open until product discovery resolves them.
+- 2026-08-16: Make the Eshkere Strategy public website V1 an active deliverable. It is a manually curated public interface—not a repository mirror or the homepage of broader Eshkere—and V1 consists of Home and Strategy pages.
 
 ## Open questions, not current blockers
 
@@ -152,4 +153,9 @@ This is a reversible operating model, not a settled description of Safe AI Swede
 
 ## Website goal
 
-A website is an established goal. It may become an organization homepage, manifesto/worldview, project hub, strategy interface, or some combination; none of those roles is settled. Before implementation, determine its audience, scope, public/private boundary, relationship to Eshkere Strategy and broader Eshkere, and the smallest useful first version. No website code has been started.
+**Active deliverable: Eshkere Strategy public website V1.** It is a curated public interface designed to help relevant AI-safety people quickly understand Vadym's direction, current work, and useful ways to interact with him.
+
+- Website content is manually curated; the website is not a mirror of repository working notes.
+- The website is not the homepage of broader Eshkere, which remains separate and evolving.
+- V1 consists of Home and Strategy pages plus a standard 404 page.
+- The detailed, authoritative product specification is `docs/WEBSITE.md`.
