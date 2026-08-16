@@ -8,6 +8,8 @@ Status: **initial incomplete inventory**. Search areas and project clusters are 
 
 Centralize existing AI-safety career opportunities, projects, applications, and serious leads before identifying bottlenecks or prioritizing next actions.
 
+Because this tracked inventory is public, do not record confidential conversations, non-public opportunities, private contact details, or other sensitive information here; keep those details in the gitignored local `private/` directory.
+
 ## Record model
 
 Keep three independent dimensions:

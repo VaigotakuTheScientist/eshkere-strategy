@@ -13,6 +13,7 @@ Build the minimum financial model needed to remove financial pressure while pres
 - Use approximate **SEK ranges**, an `as of` date, and confidence (`high`, `medium`, `low`, or `TBD`).
 - Distinguish `0`, `TBD`, and an expense paid directly by someone else.
 - Record generic source labels rather than unnecessary identifying or account information.
+- Because tracked files are public, add personal financial values here only after an explicit decision that those ranges may be public.
 - Keep genuinely sensitive details in the gitignored local `private/` directory.
 
 ## Current snapshot

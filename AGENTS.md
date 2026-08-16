@@ -11,6 +11,6 @@ Read `docs/PROJECT.md` before proposing or making strategic or project changes.
 - Keep detailed financial inputs and calculations in `docs/FINANCES.md`, and opportunity, project, and application records in `docs/OPPORTUNITIES.md`.
 - Distinguish confirmed context from working hypotheses and Codex suggestions.
 - Distinguish `TBD`, zero, and costs paid directly by someone else. Do not score broad search clusters as though they were concrete opportunities.
-- Keep genuinely sensitive notes in the ignored `private/` directory. Never commit credentials, financial-account data, identity documents or numbers, precise addresses, private medical records, or confidential information from other people; approximate strategic financial ranges are acceptable in this private repository.
+- Treat all tracked content as public. Keep genuinely sensitive notes in the ignored `private/` directory. Never commit credentials, financial-account data, identity documents or numbers, precise addresses, private medical records, or confidential information from other people; commit personal financial ranges or other non-public strategic details only after an explicit decision that they may be public.
 - Preserve relevant user changes and avoid unrelated edits.
 - Do not assume a website is a goal or make any part of the strategy public without an explicit user decision.
