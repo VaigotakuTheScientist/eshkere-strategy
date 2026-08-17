@@ -1,45 +1,152 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380">
-  <rect x="0.75" y="0.75" width="1198.5" height="378.5" fill="#f4f1e9" stroke="#999387" stroke-width="1.5"/>
-  <g fill="none" stroke="#999387" stroke-width="2">
-    <path d="M184 157 H211"/><path d="M205 151 L213 157 L205 163"/>
-    <path d="M374 157 H401"/><path d="M395 151 L403 157 L395 163"/>
-    <path d="M564 157 H591"/><path d="M585 151 L593 157 L585 163"/>
-    <path d="M754 157 H781"/><path d="M775 151 L783 157 L775 163"/>
-    <path d="M944 157 H971" stroke="#2455d6" stroke-width="3"/><path d="M965 150 L974 157 L965 164" fill="#2455d6" stroke="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" role="img">
+  <title>Eshkere Strategy operating loop</title>
+  <desc>
+    Identify the current bottleneck, acquire relevant resources, convert
+    resources into power, direct power toward AI safety, then review results and
+    update the strategy.
+  </desc>
+  <path d="M92 79 H1108" fill="none" stroke="#a39d90" stroke-width="1" />
+  <g fill="none" stroke="#a39d90" stroke-width="2">
+    <path d="M226 175 H258" />
+    <path d="M251 168 L261 175 L251 182" />
+    <path d="M458 175 H490" />
+    <path d="M483 168 L493 175 L483 182" />
+    <path d="M690 175 H722" />
+    <path d="M715 168 L725 175 L715 182" />
+    <path d="M922 175 H954" stroke="#2858d9" stroke-width="3" />
+    <path d="M947 167 L958 175 L947 183" fill="#2858d9" stroke="none" />
   </g>
-  <g font-family="Inter, system-ui, sans-serif" fill="#151515">
-    <g transform="translate(24 95)">
-      <rect width="160" height="124" fill="#faf8f3" stroke="#151515" stroke-width="1.5"/>
-      <text x="16" y="29" font-family="ui-monospace, Consolas, monospace" font-size="11" font-weight="700" fill="#625f58">01</text>
-      <text x="16" y="71" font-size="18" font-weight="700"><tspan x="16">Current</tspan><tspan x="16" dy="23">state</tspan></text>
+  <g
+    font-family="system-ui, -apple-system, Segoe UI, sans-serif"
+    fill="#171715"
+  >
+    <g transform="translate(18 112)">
+      <rect
+        width="208"
+        height="126"
+        fill="#f8f6ef"
+        stroke="#171715"
+        stroke-width="1.5"
+      />
+      <text
+        x="18"
+        y="30"
+        font-family="ui-monospace, SFMono-Regular, Consolas, monospace"
+        font-size="11"
+        font-weight="700"
+        fill="#615d55"
+      >
+        01 / DIAGNOSE
+      </text>
+      <text x="18" y="72" font-size="18" font-weight="730">
+        <tspan x="18">Identify the</tspan>
+        <tspan x="18" dy="23">bottleneck</tspan>
+      </text>
     </g>
-    <g transform="translate(214 95)">
-      <rect width="160" height="124" fill="#faf8f3" stroke="#151515" stroke-width="1.5"/>
-      <text x="16" y="29" font-family="ui-monospace, Consolas, monospace" font-size="11" font-weight="700" fill="#625f58">02</text>
-      <text x="16" y="82" font-size="18" font-weight="700">Bottlenecks</text>
+    <g transform="translate(250 112)">
+      <rect
+        width="208"
+        height="126"
+        fill="#f8f6ef"
+        stroke="#171715"
+        stroke-width="1.5"
+      />
+      <text
+        x="18"
+        y="30"
+        font-family="ui-monospace, SFMono-Regular, Consolas, monospace"
+        font-size="11"
+        font-weight="700"
+        fill="#615d55"
+      >
+        02 / ACQUIRE
+      </text>
+      <text x="18" y="72" font-size="18" font-weight="730">
+        <tspan x="18">Acquire relevant</tspan>
+        <tspan x="18" dy="23">resources</tspan>
+      </text>
     </g>
-    <g transform="translate(404 95)">
-      <rect width="160" height="124" fill="#faf8f3" stroke="#151515" stroke-width="1.5"/>
-      <text x="16" y="29" font-family="ui-monospace, Consolas, monospace" font-size="11" font-weight="700" fill="#625f58">03</text>
-      <text x="16" y="82" font-size="18" font-weight="700">Strategies</text>
+    <g transform="translate(482 112)">
+      <rect
+        width="208"
+        height="126"
+        fill="#f8f6ef"
+        stroke="#171715"
+        stroke-width="1.5"
+      />
+      <text
+        x="18"
+        y="30"
+        font-family="ui-monospace, SFMono-Regular, Consolas, monospace"
+        font-size="11"
+        font-weight="700"
+        fill="#615d55"
+      >
+        03 / CONVERT
+      </text>
+      <text x="18" y="72" font-size="18" font-weight="730">
+        <tspan x="18">Convert resources</tspan>
+        <tspan x="18" dy="23">into power</tspan>
+      </text>
     </g>
-    <g transform="translate(594 95)">
-      <rect width="160" height="124" fill="#faf8f3" stroke="#151515" stroke-width="1.5"/>
-      <text x="16" y="29" font-family="ui-monospace, Consolas, monospace" font-size="11" font-weight="700" fill="#625f58">04</text>
-      <text x="16" y="82" font-size="18" font-weight="700">Opportunities</text>
+    <g transform="translate(714 112)">
+      <rect
+        width="208"
+        height="126"
+        fill="#f8f6ef"
+        stroke="#171715"
+        stroke-width="1.5"
+      />
+      <text
+        x="18"
+        y="30"
+        font-family="ui-monospace, SFMono-Regular, Consolas, monospace"
+        font-size="11"
+        font-weight="700"
+        fill="#615d55"
+      >
+        04 / DEPLOY
+      </text>
+      <text x="18" y="72" font-size="18" font-weight="730">
+        <tspan x="18">Direct power</tspan>
+        <tspan x="18" dy="23">toward AI safety</tspan>
+      </text>
     </g>
-    <g transform="translate(784 95)">
-      <rect width="160" height="124" fill="#faf8f3" stroke="#151515" stroke-width="1.5"/>
-      <text x="16" y="29" font-family="ui-monospace, Consolas, monospace" font-size="11" font-weight="700" fill="#625f58">05</text>
-      <text x="16" y="82" font-size="18" font-weight="700">Prioritization</text>
-    </g>
-    <g transform="translate(974 95)">
-      <rect width="202" height="124" fill="#2455d6"/>
-      <text x="18" y="29" font-family="ui-monospace, Consolas, monospace" font-size="11" font-weight="700" fill="#ffffff">06 / ACTION</text>
-      <text x="18" y="82" font-size="20" font-weight="750" fill="#ffffff">Next actions</text>
+    <g transform="translate(946 112)">
+      <rect width="236" height="126" fill="#2858d9" />
+      <text
+        x="18"
+        y="30"
+        font-family="ui-monospace, SFMono-Regular, Consolas, monospace"
+        font-size="11"
+        font-weight="700"
+        fill="#dfe7ff"
+      >
+        05 / UPDATE
+      </text>
+      <text x="18" y="72" font-size="18" font-weight="750" fill="#ffffff">
+        <tspan x="18">Review results</tspan>
+        <tspan x="18" dy="23">and update</tspan>
+      </text>
     </g>
   </g>
-  <path d="M1075 221 V298 H104 V235" fill="none" stroke="#2455d6" stroke-width="3"/>
-  <path d="M97 243 L104 232 L111 243" fill="#2455d6"/>
-  <text x="511" y="326" font-family="ui-monospace, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="1.4" fill="#2455d6">OBSERVE → UPDATE → REPEAT</text>
+  <path
+    d="M1064 240 V321 H122 V257"
+    fill="none"
+    stroke="#2858d9"
+    stroke-width="3"
+  />
+  <path d="M113 268 L122 254 L131 268" fill="#2858d9" />
+  <text
+    x="593"
+    y="350"
+    text-anchor="middle"
+    font-family="ui-monospace, SFMono-Regular, Consolas, monospace"
+    font-size="11"
+    font-weight="700"
+    letter-spacing="1.4"
+    fill="#2858d9"
+  >
+    EVIDENCE → NEW BOTTLENECK → NEXT CYCLE
+  </text>
 </svg>

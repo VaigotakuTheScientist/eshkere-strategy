@@ -1,42 +1,103 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
-  <rect x="0.75" y="0.75" width="638.5" height="478.5" fill="#faf8f3" stroke="#999387" stroke-width="1.5"/>
-  <g fill="none" stroke="#999387" stroke-width="2">
-    <path d="M180 99 C235 111 268 163 327 252"/>
-    <path d="M430 75 C410 123 379 171 337 252"/>
-    <path d="M183 245 C235 246 276 250 327 258"/>
-    <path d="M458 218 C415 225 377 239 339 258"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img">
+  <title>Power map</title>
+  <desc>
+    Capital, capabilities, productivity, and influence converge into capacity
+    that can be directed toward AI safety.
+  </desc>
+  <g fill="none" stroke="#a39d90" stroke-width="1.5">
+    <path d="M213 91 H318 C352 91 372 113 372 147 V219" />
+    <path d="M505 91 H426 C392 91 372 113 372 147 V219" />
+    <path d="M213 289 H318 C352 289 372 267 372 233 V219" />
+    <path d="M505 289 H426 C392 289 372 267 372 233 V219" />
   </g>
-  <g fill="#151515">
-    <circle cx="332" cy="257" r="7"/>
+  <g fill="#f3f0e8" stroke="#171715" stroke-width="1.5">
+    <path d="M20 42 H213 V140 H20 Z" />
+    <path d="M505 42 H700 V140 H505 Z" />
+    <path d="M20 240 H213 V338 H20 Z" />
+    <path d="M505 240 H700 V338 H505 Z" />
   </g>
-  <path d="M339 262 C379 282 413 311 441 340" fill="none" stroke="#2455d6" stroke-width="4"/>
-  <path d="M432 338 L445 344 L441 330" fill="#2455d6"/>
-  <g font-family="Inter, system-ui, sans-serif" fill="#151515">
-    <g>
-      <rect x="44" y="58" width="170" height="82" fill="#f4f1e9" stroke="#151515" stroke-width="1.5"/>
-      <text x="62" y="88" font-family="ui-monospace, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="1.4" fill="#625f58">01 / RESOURCE</text>
-      <text x="62" y="119" font-size="20" font-weight="700">Capital</text>
-    </g>
-    <g>
-      <rect x="355" y="34" width="220" height="82" fill="#f4f1e9" stroke="#151515" stroke-width="1.5"/>
-      <text x="373" y="64" font-family="ui-monospace, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="1.4" fill="#625f58">02 / RESOURCE</text>
-      <text x="373" y="95" font-size="20" font-weight="700">Capabilities</text>
-    </g>
-    <g>
-      <rect x="58" y="204" width="190" height="82" fill="#f4f1e9" stroke="#151515" stroke-width="1.5"/>
-      <text x="76" y="234" font-family="ui-monospace, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="1.4" fill="#625f58">03 / RESOURCE</text>
-      <text x="76" y="265" font-size="20" font-weight="700">Productivity</text>
-    </g>
-    <g>
-      <rect x="404" y="176" width="188" height="82" fill="#f4f1e9" stroke="#151515" stroke-width="1.5"/>
-      <text x="422" y="206" font-family="ui-monospace, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="1.4" fill="#625f58">04 / RESOURCE</text>
-      <text x="422" y="237" font-size="20" font-weight="700">Influence</text>
-    </g>
+  <g
+    font-family="ui-monospace, SFMono-Regular, Consolas, monospace"
+    font-size="11"
+    font-weight="700"
+    letter-spacing="1.3"
+    fill="#615d55"
+  >
+    <text x="38" y="70">01 / RESOURCE</text>
+    <text x="523" y="70">02 / RESOURCE</text>
+    <text x="38" y="268">03 / RESOURCE</text>
+    <text x="523" y="268">04 / RESOURCE</text>
   </g>
-  <g>
-    <rect x="389" y="337" width="205" height="99" fill="#2455d6"/>
-    <text x="411" y="370" font-family="ui-monospace, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="1.4" fill="#ffffff">OBJECTIVE</text>
-    <text x="411" y="407" font-family="Inter, system-ui, sans-serif" font-size="29" font-weight="750" fill="#ffffff">AI Safety</text>
+  <g
+    font-family="system-ui, -apple-system, Segoe UI, sans-serif"
+    font-size="23"
+    font-weight="720"
+    fill="#171715"
+  >
+    <text x="38" y="111">Capital</text>
+    <text x="523" y="111">Capabilities</text>
+    <text x="38" y="309">Productivity</text>
+    <text x="523" y="309">Influence</text>
   </g>
-  <text x="34" y="445" font-family="ui-monospace, Consolas, monospace" font-size="10" font-weight="700" letter-spacing="1.2" fill="#625f58">RESOURCES → CAPACITY → CONTRIBUTION</text>
+  <circle cx="372" cy="219" r="58" fill="#171715" />
+  <text
+    x="372"
+    y="213"
+    text-anchor="middle"
+    font-family="ui-monospace, SFMono-Regular, Consolas, monospace"
+    font-size="10"
+    font-weight="700"
+    letter-spacing="1.2"
+    fill="#bdb8ad"
+  >
+    COMBINED
+  </text>
+  <text
+    x="372"
+    y="238"
+    text-anchor="middle"
+    font-family="system-ui, -apple-system, Segoe UI, sans-serif"
+    font-size="18"
+    font-weight="750"
+    fill="#f8f6ef"
+  >
+    Capacity
+  </text>
+  <path d="M372 279 V381" fill="none" stroke="#2858d9" stroke-width="4" />
+  <path d="M363 371 L372 384 L381 371" fill="#2858d9" />
+  <path d="M238 394 H506 V484 H238 Z" fill="#2858d9" />
+  <text
+    x="372"
+    y="421"
+    text-anchor="middle"
+    font-family="ui-monospace, SFMono-Regular, Consolas, monospace"
+    font-size="10"
+    font-weight="700"
+    letter-spacing="1.4"
+    fill="#dfe7ff"
+  >
+    DIRECT TOWARD
+  </text>
+  <text
+    x="372"
+    y="459"
+    text-anchor="middle"
+    font-family="system-ui, -apple-system, Segoe UI, sans-serif"
+    font-size="30"
+    font-weight="760"
+    fill="#ffffff"
+  >
+    AI Safety
+  </text>
+  <text
+    x="20"
+    y="500"
+    font-family="ui-monospace, SFMono-Regular, Consolas, monospace"
+    font-size="10"
+    font-weight="700"
+    letter-spacing="1.2"
+    fill="#615d55"
+  >
+    RESOURCES → CAPACITY → CONTRIBUTION
+  </text>
 </svg>

@@ -1,6 +1,6 @@
 # Eshkere Strategy project context
 
-Last updated: 2026-08-16
+Last updated: 2026-08-18
 
 ## Repository purpose
 
@@ -141,6 +141,7 @@ This is a reversible operating model, not a settled description of Safe AI Swede
 - 2026-08-16: Record the first financial screens, live opportunity portfolio, and execution queue as current operational hypotheses/state—not permanent strategy decisions.
 - 2026-08-16: Treat a website as an established goal, while leaving its exact role, audience, scope, and implementation timing open until product discovery resolves them.
 - 2026-08-16: Make the Eshkere Strategy public website V1 an active deliverable. It is a manually curated public interface—not a repository mirror or the homepage of broader Eshkere—and V1 consists of Home and Strategy pages.
+- 2026-08-18: Implement the website as a first-person public strategy memorandum for AI-safety employers, funders, programs, researchers, and collaborators. Use a confident editorial presentation, two information-design SVGs, and a five-stage bottleneck-to-update operating loop while preserving the static Astro/GitHub Pages architecture.
 
 ## Open questions, not current blockers
 

@@ -1,7 +1,7 @@
 # Eshkere Strategy website V1
 
-Status: approved for implementation  
-Last updated: 2026-08-16
+Status: implemented
+Last updated: 2026-08-18
 
 This document is the source of truth for the Eshkere Strategy public website V1. It records the settled product brief without changing the underlying strategy.
 
@@ -59,7 +59,7 @@ Use this section order:
 3. Current financial/runway bottleneck without precise personal figures.
 4. The four-part power model.
 5. The five resource-acquisition routes, distinguished from career paths.
-6. The operating loop: **Current state → bottlenecks → strategies → opportunities → prioritization → next actions**.
+6. The operating loop: **identify the bottleneck → acquire relevant resources → convert resources into power → direct power toward AI safety → review results and update**.
 7. Decision principles.
 8. What the strategy is not.
 9. Closing links to current priorities and the GitHub repository.
@@ -72,13 +72,13 @@ Do not make Donate, Fund me, Hire me, or Book a call primary calls to action in 
 
 ## Design and interaction
 
-The desired impression is serious, clear, high-agency, intellectually curious, and personal rather than corporate: a personal strategy notebook crossed with a technical field memo and a clean portfolio.
+The desired impression is serious, clear, high-agency, intellectually curious, and personal rather than corporate: a personal strategy notebook crossed with a technical field memo and a clean portfolio. Use a16z.com only as a high-level reference for confident editorial scale, hierarchy, grid discipline, restraint, and deliberate interaction; do not copy its branding, layouts, assets, text, or distinctive motion.
 
 Use a warm off-white or near-white background, near-black text, one restrained accent color, subtle borders, strong system typography, generous whitespace, and cards only where they aid scanning. Use monospace labels sparingly for status and metadata. Do not request remote fonts.
 
-Keep the site text-led, with exactly two original repository-native vector illustrations: a Home hero power map showing Capital, Capabilities, Productivity, and Influence feeding capacity to contribute to AI Safety; and a Strategy-page operating-loop diagram showing the six stages and their feedback cycle. Both use the existing warm neutral, near-black, muted stroke, and restrained cobalt palette. The power map moves below the hero CTAs on mobile. The operating loop uses a readable vertical CSS presentation at narrow widths rather than shrinking the wide SVG. Use descriptive alternative text.
+Keep the site text-led, with exactly two original repository-native vector illustrations: a Home hero power map showing Capital, Capabilities, Productivity, and Influence feeding capacity to contribute to AI Safety; and a Strategy-page operating-loop diagram showing the five stages and their feedback cycle. Both use the existing warm neutral, near-black, muted stroke, and restrained cobalt palette. At narrow widths, replace each wide SVG with a readable vertical CSS presentation rather than shrinking it. Use the approved descriptive alternative text from the implementation brief.
 
-Do not use imagery elsewhere in V1. Avoid stock photography, generated raster art, portraits, generic AI or sci-fi motifs, meeting photos, money or power clichés, 3D renders, photographic backgrounds, gradients masquerading as illustration, or icons for every card. Motion is limited to simple hover and focus transitions and must respect `prefers-reduced-motion`.
+Do not use imagery elsewhere in V1. Avoid stock photography, generated raster art, portraits, generic AI or sci-fi motifs, meeting photos, money or power clichés, 3D renders, photographic backgrounds, gradients masquerading as illustration, or icons for every card. Lightweight progressive enhancement may add short intersection-based entrances and a Strategy-page reading-progress line. Content must remain fully available without JavaScript, motion must never delay access to information, and reduced-motion preferences must disable the effects.
 
 Build mobile-first. At 320px, content must remain one-column without horizontal overflow. At wider sizes, use compact grids while preserving readable line lengths. Navigation stays simple without a hamburger unless necessary.
 
