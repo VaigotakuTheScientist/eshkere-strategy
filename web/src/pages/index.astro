@@ -2,6 +2,7 @@
 import { Picture } from 'astro:assets';
 import heroPlanet from '../assets/hero-planet.png';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import VersionSwitcher from '../components/VersionSwitcher.astro';
 import StrategyOverview from '../components/StrategyOverview.astro';
 import { site } from '../data/site';
 
@@ -10,6 +11,7 @@ const description = 'Vadym Sulzhenko’s public strategy for building the financ
 ---
 
 <BaseLayout {title} {description} currentPath="/">
+  <VersionSwitcher active="current" tone="current" />
   <section class="cosmic-hero" aria-labelledby="hero-title">
     <div class="hero-art" aria-hidden="true">
       <Picture

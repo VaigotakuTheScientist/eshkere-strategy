@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import VersionSwitcher from '../../components/VersionSwitcher.astro';
 import CosmicHero from '../../components/CosmicHero.astro';
 import StrategyOverview from '../../components/StrategyOverview.astro';
 import '../../styles/cosmic-experiment.css';
@@ -9,6 +10,7 @@ const description = 'A cosmic visual experiment for Vadym Sulzhenko’s public A
 ---
 
 <BaseLayout {title} {description} currentPath="/cosmic">
+  <VersionSwitcher active="cosmic" />
   <CosmicHero />
   <StrategyOverview />
 </BaseLayout>

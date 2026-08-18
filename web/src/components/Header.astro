@@ -6,12 +6,6 @@ interface Props {
 }
 
 const { currentPath } = Astro.props;
-
-const versions = [
-  { id: '/', label: 'Current', href: site.links.home },
-  { id: '/cosmic', label: 'Cosmic', href: site.links.cosmic },
-  { id: '/giorno', label: 'Giorno', href: site.links.giorno },
-] as const;
 ---
 
 <header class="site-header">
@@ -27,16 +21,14 @@ const versions = [
       <span>ESHKERE</span><span class="wordmark-spark" aria-hidden="true">✦</span>
     </a>
 
+    <a class="header-orbit-link" href={site.links.githubRepository} aria-label="View the Eshkere Strategy GitHub repository">
+      <span aria-hidden="true">↗</span>
+    </a>
+
     <nav class="site-menu" id="site-menu" aria-label="Primary navigation">
       <a href={site.links.home} aria-current={currentPath === '/' ? 'page' : undefined}><span>01</span>Home</a>
       <a href={site.links.strategy} aria-current={currentPath === '/strategy' ? 'page' : undefined}><span>02</span>Strategy</a>
       <a href={site.links.githubRepository}><span>03</span>GitHub <span aria-hidden="true">↗</span></a>
-      <div class="site-menu__views" role="group" aria-label="Design experiment versions">
-        <span class="site-menu__views-label" aria-hidden="true">View</span>
-        {versions.map((version) => (
-          <a href={version.href} aria-current={currentPath === version.id ? 'page' : undefined}>{version.label}</a>
-        ))}
-      </div>
     </nav>
   </div>
 </header>
@@ -44,7 +36,6 @@ const versions = [
 <script is:inline>
   const menuToggle = document.querySelector('.menu-toggle');
   const siteMenu = document.querySelector('#site-menu');
-  const siteHeader = document.querySelector('.site-header');
 
   if (menuToggle && siteMenu) {
     const closeMenu = () => {
@@ -58,22 +49,12 @@ const versions = [
       document.body.classList.toggle('menu-open', !open);
     });
 
-    siteMenu.addEventListener('click', (event) => {
-      if (event.target.closest('a')) closeMenu();
-    });
+    siteMenu.addEventListener('click', closeMenu);
     document.addEventListener('keydown', (event) => {
       if (event.key === 'Escape') {
         closeMenu();
         menuToggle.focus();
       }
     });
-  }
-
-  if (siteHeader) {
-    const updateScrolled = () => {
-      siteHeader.classList.toggle('is-scrolled', window.scrollY > 12);
-    };
-    updateScrolled();
-    window.addEventListener('scroll', updateScrolled, { passive: true });
   }
 </script>
