@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import VersionSwitcher from '../../components/VersionSwitcher.astro';
 import GiornoHero from '../../components/GiornoHero.astro';
 import StrategyOverview from '../../components/StrategyOverview.astro';
 import '../../styles/cosmic-experiment.css';
@@ -11,7 +10,6 @@ const description = 'A Giorno-ready cosmic visual experiment for Vadym Sulzhenko
 ---
 
 <BaseLayout {title} {description} currentPath="/giorno">
-  <VersionSwitcher active="giorno" />
   <GiornoHero />
   <StrategyOverview />
 </BaseLayout>
