@@ -9,15 +9,52 @@ const { currentPath } = Astro.props;
 ---
 
 <header class="site-header">
-  <div class="shell header-inner">
+  <div class="header-inner">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+      <span class="sr-only">Open navigation</span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+
     <a class="wordmark" href={site.links.home} aria-label="Eshkere Strategy home">
-      <span class="wordmark-mark" aria-hidden="true">ES</span>
-      <span>{site.name}</span>
+      <span>ESHKERE</span><span class="wordmark-spark" aria-hidden="true">✦</span>
     </a>
-    <nav aria-label="Primary navigation">
-      <a href={site.links.home} aria-current={currentPath === '/' ? 'page' : undefined}>Home</a>
-      <a href={site.links.strategy} aria-current={currentPath === '/strategy' ? 'page' : undefined}>Strategy</a>
-      <a href={site.links.githubRepository}>GitHub <span aria-hidden="true">↗</span></a>
+
+    <a class="header-orbit-link" href={site.links.githubRepository} aria-label="View the Eshkere Strategy GitHub repository">
+      <span aria-hidden="true">↗</span>
+    </a>
+
+    <nav class="site-menu" id="site-menu" aria-label="Primary navigation">
+      <a href={site.links.home} aria-current={currentPath === '/' ? 'page' : undefined}><span>01</span>Home</a>
+      <a href={site.links.strategy} aria-current={currentPath === '/strategy' ? 'page' : undefined}><span>02</span>Strategy</a>
+      <a href={site.links.githubRepository}><span>03</span>GitHub <span aria-hidden="true">↗</span></a>
     </nav>
   </div>
 </header>
+
+<script is:inline>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const siteMenu = document.querySelector('#site-menu');
+
+  if (menuToggle && siteMenu) {
+    const closeMenu = () => {
+      menuToggle.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('menu-open');
+    };
+
+    menuToggle.addEventListener('click', () => {
+      const open = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!open));
+      document.body.classList.toggle('menu-open', !open);
+    });
+
+    siteMenu.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        closeMenu();
+        menuToggle.focus();
+      }
+    });
+  }
+</script>

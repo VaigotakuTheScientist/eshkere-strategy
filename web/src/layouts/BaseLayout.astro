@@ -22,7 +22,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#f3f0e8" />
+    <meta name="theme-color" content="#03040b" />
     {noindex && <meta name="robots" content="noindex" />}
     <link rel="canonical" href={canonical} />
     <link rel="icon" href={`${import.meta.env.BASE_URL}/favicon.svg`} type="image/svg+xml" />
@@ -38,6 +38,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
   </head>
   <body data-page={currentPath ?? 'other'}>
     <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="cosmic-grain" aria-hidden="true"></div>
     <Header {currentPath} />
     {currentPath === '/strategy' && (
       <div class="reading-progress" aria-hidden="true"><span data-reading-progress></span></div>
@@ -77,8 +78,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
           if (!progressFrame) progressFrame = window.requestAnimationFrame(updateProgress);
         };
         updateProgress();
+        window.requestAnimationFrame(updateProgress);
         window.addEventListener('scroll', queueProgress, { passive: true });
         window.addEventListener('resize', queueProgress);
+        window.addEventListener('hashchange', queueProgress);
       }
     </script>
   </body>

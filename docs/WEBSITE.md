@@ -40,7 +40,7 @@ Do not add About, Projects, Blog, Contact, Now, or other authored pages in V1.
 Use this section order:
 
 1. Header with Eshkere Strategy, Home, Strategy, and GitHub.
-2. Hero: “Build power. Spend it on AI safety.” with links to current priorities and the strategy.
+2. Hero: “MAXIMIZE HEALTH, PLAY GAMES” with “Health is non-optional. Everything else is a game.” and links to current priorities and the strategy.
 3. What I'm optimizing for: objective, current bottleneck, and longer horizon.
 4. Now: manually dated priority cards sourced from `web/src/data/site.ts`.
 5. What I mean by power: Capital, Capabilities, Productivity, and Influence in that order.
@@ -72,13 +72,13 @@ Do not make Donate, Fund me, Hire me, or Book a call primary calls to action in 
 
 ## Design and interaction
 
-The desired impression is serious, clear, high-agency, intellectually curious, and personal rather than corporate: a personal strategy notebook crossed with a technical field memo and a clean portfolio. Use a16z.com only as a high-level reference for confident editorial scale, hierarchy, grid discipline, restraint, and deliberate interaction; do not copy its branding, layouts, assets, text, or distinctive motion.
+The 2026-08-18 cosmic mock-up is the authoritative visual reference. The desired impression is cinematic, playful, internet-native, premium, ambitious, and personal rather than corporate: a sophisticated hyperpop world wrapped around a rigorous public strategy.
 
-Use a warm off-white or near-white background, near-black text, one restrained accent color, subtle borders, strong system typography, generous whitespace, and cards only where they aid scanning. Use monospace labels sparingly for status and metadata. Do not request remote fonts.
+Use a deep near-black cosmic ground; electric cyan, bubblegum pink, ultraviolet, acid lime, and peach accents; a large luminous Earth-like planet; editorial serif display typography; and restrained hearts, sparkles, pixels, orbit lines, and game-like stickers. The centered `ESHKERE` wordmark is rendered as accessible text. No external fonts are required.
 
-Keep the site text-led, with exactly two original repository-native vector illustrations: a Home hero power map showing Capital, Capabilities, Productivity, and Influence feeding capacity to contribute to AI Safety; and a Strategy-page operating-loop diagram showing the five stages and their feedback cycle. Both use the existing warm neutral, near-black, muted stroke, and restrained cobalt palette. At narrow widths, replace each wide SVG with a readable vertical CSS presentation rather than shrinking it. Use the approved descriptive alternative text from the implementation brief.
+The Home hero uses a separate original, text-free generated planet image. Astro produces AVIF and WebP versions with a PNG fallback. Interface text, navigation, buttons, badges, and decorative linework remain HTML and CSS rather than being baked into the artwork. The exact hero copy is “MAXIMIZE HEALTH, PLAY GAMES” with “Health is non-optional. Everything else is a game.” The remainder of the site carries the same visual language with calmer backgrounds and reduced decoration for long-form readability.
 
-Do not use imagery elsewhere in V1. Avoid stock photography, generated raster art, portraits, generic AI or sci-fi motifs, meeting photos, money or power clichés, 3D renders, photographic backgrounds, gradients masquerading as illustration, or icons for every card. Lightweight progressive enhancement may add short intersection-based entrances and a Strategy-page reading-progress line. Content must remain fully available without JavaScript, motion must never delay access to information, and reduced-motion preferences must disable the effects.
+Motion is restrained: slow atmospheric image drift, subtle floating decorations, chromatic hover feedback, intersection-based entrances, and a Strategy-page reading-progress line. Content remains fully available without JavaScript, motion never delays access to information, and `prefers-reduced-motion` disables atmospheric and entrance effects.
 
 Build mobile-first. At 320px, content must remain one-column without horizontal overflow. At wider sizes, use compact grids while preserving readable line lengths. Navigation stays simple without a hamburger unless necessary.
 
@@ -113,6 +113,6 @@ V1 is complete when:
 
 ## Explicit non-goals
 
-Do not implement authentication, a private dashboard, admin UI, CMS, database, financial calculators, automatic opportunity scraping, live application tracking, website agents, payments or donations, newsletter, blog, comments, calendar integration, detailed CV, resume generator, power score, charts, complex animations, team pages, a full Eshkere manifesto, Health/Games pages, multilingual support, dark mode, custom domain, analytics, or automatic synchronization from strategy documents.
+Do not implement authentication, a private dashboard, admin UI, CMS, database, financial calculators, automatic opportunity scraping, live application tracking, website agents, payments or donations, newsletter, blog, comments, calendar integration, detailed CV, resume generator, power score, charts, particle-effect demos, team pages, a full Eshkere manifesto, Health/Games pages, multilingual support, a theme switcher, custom domain, analytics, or automatic synchronization from strategy documents.
 
 These are deferrals, not a feature backlog. Do not turn them into TODOs without a new product decision.

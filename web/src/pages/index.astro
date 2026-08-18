@@ -1,4 +1,6 @@
 ---
+import { Picture } from 'astro:assets';
+import heroPlanet from '../assets/hero-planet.png';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import StatusBadge from '../components/StatusBadge.astro';
@@ -14,135 +16,175 @@ import {
 
 const title = 'Eshkere Strategy — Vadym Sulzhenko';
 const description = 'Vadym Sulzhenko’s public strategy for building the financial runway, capabilities, productivity, and influence needed to contribute more effectively to AI safety.';
+const powerSymbols = ['+', '◇', '✦', '♥'];
 ---
 
 <BaseLayout {title} {description} currentPath="/">
-  <section class="hero shell">
-    <div class="hero-copy" data-reveal>
-      <p class="eyebrow">Eshkere Strategy / Vadym Sulzhenko</p>
-      <h1>Build power.<br /><span>Spend it on AI safety.</span></h1>
-      <p class="hero-lede">Eshkere Strategy is my personal operating strategy for increasing my capacity to contribute to AI safety.</p>
-      <p class="hero-note">I am building the runway, capabilities, productivity, and influence required to pursue consequential work—and then direct those resources toward the objective.</p>
-      <div class="button-row">
-        <a class="button button-primary" href="#now">See current priorities <span aria-hidden="true">↓</span></a>
-        <a class="button button-secondary" href={site.links.strategy}>Read the strategy <span aria-hidden="true">→</span></a>
-      </div>
+  <section class="cosmic-hero" aria-labelledby="hero-title">
+    <div class="hero-art" aria-hidden="true">
+      <Picture
+        src={heroPlanet}
+        formats={['avif', 'webp']}
+        fallbackFormat="png"
+        widths={[768, 1280, 2048]}
+        sizes="100vw"
+        alt=""
+        loading="eager"
+        fetchpriority="high"
+      />
     </div>
-    <figure class="hero-visual" data-reveal>
-      <figcaption class="visual-label"><span>Figure 01</span> Resource map / instrumental power</figcaption>
-      <img class="power-map-desktop" src={`${import.meta.env.BASE_URL}/power-map.svg`} alt="Capital, capabilities, productivity and influence combine to increase my capacity to contribute to AI safety." width="720" height="520" />
-      <div class="power-map-mobile" role="img" aria-label="Capital, capabilities, productivity and influence combine to increase my capacity to contribute to AI safety.">
-        <ol>
+    <div class="hero-vignette" aria-hidden="true"></div>
+    <div class="orbit orbit-one" aria-hidden="true"></div>
+    <div class="orbit orbit-two" aria-hidden="true"></div>
+    <div class="orbit orbit-three" aria-hidden="true"></div>
+
+    <div class="cosmic-decor" aria-hidden="true">
+      <span class="decor-star star-one">✦</span>
+      <span class="decor-star star-two">✧</span>
+      <span class="decor-star star-three">✦</span>
+      <span class="decor-heart heart-one">♥</span>
+      <span class="decor-heart heart-two">♥</span>
+      <span class="decor-pixel pixel-one">+</span>
+      <span class="decor-pixel pixel-two">◆</span>
+    </div>
+
+    <div class="hero-sticker sticker-health" aria-hidden="true">
+      <span>Health</span><span>first</span><strong>always ♥</strong>
+    </div>
+    <div class="hero-sticker sticker-level" aria-hidden="true">
+      <span>Power</span><strong>→ AI Safety</strong>
+    </div>
+
+    <div class="hero-copy" data-reveal>
+      <p class="hero-kicker">Personal strategy / AI safety</p>
+      <h1 id="hero-title">MAXIMIZE HEALTH,<br /><span>PLAY GAMES</span></h1>
+      <div class="hero-support">
+        <p>Health is non-optional. Everything else is a game.</p>
+        <a href="#now" aria-label="See current priorities"><span>See what matters now</span><span aria-hidden="true">→</span></a>
+      </div>
+      <p class="hero-context">I use Eshkere Strategy to build power—and direct it toward AI safety.</p>
+    </div>
+
+    <div class="hero-signoff" aria-hidden="true">
+      <span class="signoff-heart">♥</span><span>ESHKERE</span><i>✦</i>
+    </div>
+
+    <nav class="hero-dock" aria-label="Jump to key sections">
+      <a class="dock-lime" href="#now" aria-label="Current priorities"><span aria-hidden="true">♥</span></a>
+      <a class="dock-pink" href="#power" aria-label="Power model"><span aria-hidden="true">+</span></a>
+      <a class="dock-violet" href={site.links.strategy} aria-label="Read the strategy"><span aria-hidden="true">✦</span></a>
+      <a class="dock-cyan" href="#work" aria-label="Current work"><span aria-hidden="true">◆</span></a>
+    </nav>
+  </section>
+
+  <div class="home-content">
+    <section class="content-section shell" id="objective" aria-labelledby="optimizing-heading" data-reveal>
+      <SectionHeading id="optimizing-heading" label="Objective / 01" title="What I’m optimizing for" />
+      <div class="section-body optimization-grid">
+        <p class="lead-statement">AI safety is the objective. <span>Power is a means.</span></p>
+        <dl class="definition-list">
+          <div>
+            <dt>Objective</dt>
+            <dd>Maximize my useful contribution to solving AI-safety problems.</dd>
+          </div>
+          <div>
+            <dt>Current bottleneck</dt>
+            <dd>Build enough reliable financial runway that basic living costs stop consuming disproportionate attention and valuable career opportunities become easier to pursue.</dd>
+          </div>
+          <div>
+            <dt>Longer horizon</dt>
+            <dd>Build capital, capabilities, productivity, and influence—and deploy them rather than treating accumulation as the endpoint.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="content-section shell now-section" id="now" aria-labelledby="now-heading" data-reveal>
+      <SectionHeading id="now-heading" label="Current priorities / 02" title="Now" intro={`Last updated ${site.lastUpdated}`} />
+      <div class="section-body">
+        <div class="bottleneck-statement">
+          <p class="memo-label">Current bottleneck</p>
+          <p>Financial runway is the constraint I am working to remove.</p>
+          <p>Stability means covering ordinary life without persistent financial attention while gaining room for learning, useful tools, productive working conditions, high-value travel, savings, and relocation when an unusually valuable opportunity warrants it.</p>
+        </div>
+        <div class="card-grid priorities-grid">
+          {priorities.map((priority, index) => (
+            <StrategyCard number={String(index + 1).padStart(2, '0')} title={priority.title} description={priority.description} />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section shell power-section" id="power" aria-labelledby="power-heading" data-reveal>
+      <SectionHeading id="power-heading" label="Resource model / 03" title="What I mean by power" intro="Not status. Practical capacity to make useful things happen." />
+      <div class="section-body">
+        <div class="card-grid power-grid" aria-label="Four interconnected forms of power">
           {powerCategories.map((category, index) => (
-            <li><span>{String(index + 1).padStart(2, '0')}</span>{category.title}</li>
+            <article class:list={['strategy-card', `power-card-${index + 1}`]}>
+              <p class="power-symbol" aria-hidden="true">{powerSymbols[index]}</p>
+              <p class="card-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</p>
+              <h3>{category.title}</h3>
+              <p>{category.description}</p>
+            </article>
+          ))}
+        </div>
+        <p class="section-closing">None is sufficient alone. The strategy asks which combination removes the current constraint and where that capacity can create the most AI-safety value.</p>
+      </div>
+    </section>
+
+    <section class="content-section shell" aria-labelledby="acquisition-heading" data-reveal>
+      <SectionHeading id="acquisition-heading" label="Acquisition / 04" title="Five resource routes" intro="A decision space—not a menu of equally promising options." />
+      <div class="section-body">
+        <ol class="route-list">
+          {acquisitionRoutes.map((route, index) => (
+            <li>
+              <span class="route-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+              <div><p class="route-emphasis">{route.emphasis}</p><h3>{route.title}</h3></div>
+              <p>{route.description}</p>
+            </li>
           ))}
         </ol>
-        <p><span>Objective</span>AI Safety</p>
+        <p class="section-closing">The current emphasis is aligned employment and transition funding. Other routes become more attractive when a concrete project, program, or experiment justifies them.</p>
       </div>
-    </figure>
-  </section>
+    </section>
 
-  <section class="content-section shell" aria-labelledby="optimizing-heading" data-reveal>
-    <SectionHeading id="optimizing-heading" label="Objective / 02" title="What I’m optimizing for" />
-    <div class="section-body optimization-grid">
-      <p class="lead-statement">AI safety is the objective. <span>Power is a means.</span></p>
-      <dl class="definition-list">
-        <div>
-          <dt>Objective</dt>
-          <dd>Maximize my useful contribution to solving AI-safety problems.</dd>
+    <section class="content-section shell" id="work" aria-labelledby="work-heading" data-reveal>
+      <SectionHeading id="work-heading" label="Projects / 05" title="Current work" intro="Present activity—not a claim of established success." />
+      <div class="section-body work-grid">
+        {currentWork.map((work) => (
+          <article class="work-card">
+            <StatusBadge label={work.status} tone={work.tone} />
+            <h3>{work.title}</h3>
+            <p>{work.description}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="content-section leverage-section shell" aria-labelledby="leverage-heading" data-reveal>
+      <SectionHeading id="leverage-heading" label="Collaboration / 06" title="Where outside leverage would help" intro="Concrete opportunities and specific connections are especially useful." />
+      <div class="section-body">
+        <ul class="ask-list">
+          {collaborationAsks.map((ask) => (
+            <li>
+              <h3>{ask.title}</h3>
+              <p>{ask.description}</p>
+            </li>
+          ))}
+        </ul>
+        <div class="cta-panel">
+          <a class="button button-inverse" href={site.links.githubProfile}>View my GitHub <span aria-hidden="true">↗</span></a>
+          <p>Contact information and other public links can be reached through my public profiles.</p>
         </div>
-        <div>
-          <dt>Current bottleneck</dt>
-          <dd>Build enough reliable financial runway that basic living costs stop consuming disproportionate attention and valuable career opportunities become easier to pursue.</dd>
-        </div>
-        <div>
-          <dt>Longer horizon</dt>
-          <dd>Build capital, capabilities, productivity, and influence—and deploy them rather than treating accumulation as the endpoint.</dd>
-        </div>
-      </dl>
-    </div>
-  </section>
-
-  <section class="content-section shell now-section" id="now" aria-labelledby="now-heading" data-reveal>
-    <SectionHeading id="now-heading" label="Current priorities / 03" title="Now" intro={`Last updated ${site.lastUpdated}`} />
-    <div class="section-body">
-      <div class="bottleneck-statement">
-        <p class="memo-label">Current bottleneck</p>
-        <p>Financial runway is the constraint I am working to remove.</p>
-        <p>Stability means covering ordinary life without persistent financial attention while gaining room for learning, useful tools, productive working conditions, high-value travel, savings, and relocation when an unusually valuable opportunity warrants it.</p>
       </div>
-      <div class="card-grid priorities-grid">
-        {priorities.map((priority, index) => (
-          <StrategyCard number={String(index + 1).padStart(2, '0')} title={priority.title} description={priority.description} />
-        ))}
+    </section>
+
+    <section class="eshkere-note shell" aria-labelledby="eshkere-heading" data-reveal>
+      <p class="section-label">Clarification / 07</p>
+      <div>
+        <h2 id="eshkere-heading">Health, Games, and this strategy</h2>
+        <p>The Health / Games framing belongs to the broader, still-evolving Eshkere idea. Eshkere Strategy is the current name for my personal strategy and operating system. It is not an investment fund, a conventional company, or an established institution.</p>
       </div>
-    </div>
-  </section>
-
-  <section class="content-section shell" aria-labelledby="power-heading" data-reveal>
-    <SectionHeading id="power-heading" label="Resource model / 04" title="What I mean by power" intro="Here, “power” is not the terminal goal. It means having more ability to make useful things happen." />
-    <div class="section-body">
-      <div class="card-grid power-grid" aria-label="Four interconnected forms of power">
-        {powerCategories.map((category, index) => (
-          <StrategyCard number={String(index + 1).padStart(2, '0')} title={category.title} description={category.description} />
-        ))}
-      </div>
-      <p class="section-closing">None is sufficient alone. The strategy asks which combination removes the current constraint and where that capacity can create the most AI-safety value.</p>
-    </div>
-  </section>
-
-  <section class="content-section shell" aria-labelledby="acquisition-heading" data-reveal>
-    <SectionHeading id="acquisition-heading" label="Acquisition / 05" title="Five resource routes" intro="This is a decision space, not a menu of equally promising options." />
-    <div class="section-body">
-      <ol class="route-list">
-        {acquisitionRoutes.map((route, index) => (
-          <li>
-            <span class="route-number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
-            <div><p class="route-emphasis">{route.emphasis}</p><h3>{route.title}</h3></div>
-            <p>{route.description}</p>
-          </li>
-        ))}
-      </ol>
-      <p class="section-closing">The current emphasis is aligned employment and transition funding. Other routes become more attractive when a concrete project, program, or experiment justifies them.</p>
-    </div>
-  </section>
-
-  <section class="content-section shell" aria-labelledby="work-heading" data-reveal>
-    <SectionHeading id="work-heading" label="Projects / 06" title="Current work" intro="These labels describe the present state of the work—not established success." />
-    <div class="section-body work-grid">
-      {currentWork.map((work) => (
-        <article class="work-card">
-          <StatusBadge label={work.status} tone={work.tone} />
-          <h3>{work.title}</h3>
-          <p>{work.description}</p>
-        </article>
-      ))}
-    </div>
-  </section>
-
-  <section class="content-section leverage-section shell" aria-labelledby="leverage-heading" data-reveal>
-    <SectionHeading id="leverage-heading" label="Collaboration / 07" title="Ways to help or collaborate" intro="If you work in or around AI safety, concrete opportunities and specific connections are especially useful." />
-    <div class="section-body">
-      <ul class="ask-list">
-        {collaborationAsks.map((ask) => (
-          <li>
-            <h3>{ask.title}</h3>
-            <p>{ask.description}</p>
-          </li>
-        ))}
-      </ul>
-      <div class="cta-panel">
-        <a class="button button-inverse" href={site.links.githubProfile}>View my GitHub <span aria-hidden="true">↗</span></a>
-        <p>Contact information and other public links can be reached through my public profiles.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="eshkere-note shell" aria-labelledby="eshkere-heading" data-reveal>
-    <p class="section-label">Clarification / 08</p>
-    <div>
-      <h2 id="eshkere-heading">What “Eshkere Strategy” means</h2>
-      <p>Eshkere Strategy is the current name for my personal strategy and operating system. It is not an investment fund, a conventional company, or an established institution. The broader Eshkere idea remains separate and is still evolving.</p>
-    </div>
-  </section>
+    </section>
+  </div>
 </BaseLayout>

@@ -1,4 +1,6 @@
 ---
+import { Picture } from 'astro:assets';
+import heroPlanet from '../assets/hero-planet.png';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SectionHeading from '../components/SectionHeading.astro';
 import StrategyCard from '../components/StrategyCard.astro';
@@ -30,11 +32,28 @@ const exclusions = [
 ---
 
 <BaseLayout {title} {description} currentPath="/strategy">
-  <header class="page-hero shell" data-reveal>
-    <p class="eyebrow">Eshkere Strategy / working model</p>
-    <h1>The strategy</h1>
-    <p>Given where I am now, what should I acquire, build, pursue, deploy, or stop doing to maximize my useful contribution to AI safety?</p>
+  <header class="page-hero strategy-hero" data-reveal>
+    <div class="strategy-planet-art" aria-hidden="true">
+      <Picture
+        src={heroPlanet}
+        formats={['avif', 'webp']}
+        fallbackFormat="png"
+        widths={[768, 1280, 2048]}
+        sizes="100vw"
+        alt=""
+        loading="eager"
+      />
+    </div>
+    <div class="strategy-hero-orbit" aria-hidden="true"></div>
+    <span class="strategy-hero-spark" aria-hidden="true">✦</span>
+    <div class="shell page-hero-copy">
+      <p class="eyebrow">Eshkere Strategy / working model</p>
+      <h1>The strategy</h1>
+      <p>Given where I am now, what should I acquire, build, pursue, deploy, or stop doing to maximize my useful contribution to AI safety?</p>
+    </div>
   </header>
+
+  <div class="strategy-content">
 
   <section class="content-section shell" id="horizons" aria-labelledby="horizons-heading" data-reveal>
     <SectionHeading id="horizons-heading" label="Direction / 01" title="Objective and horizons" />
@@ -112,14 +131,12 @@ const exclusions = [
   <section class="content-section loop-section shell" id="operating-loop" aria-labelledby="loop-heading" data-reveal>
     <SectionHeading id="loop-heading" label="Method / 05" title="Operating loop" intro="The strategy is a feedback system, not a fixed plan." />
     <div class="section-body">
-      <figure class="loop-visual">
-        <img src={`${import.meta.env.BASE_URL}/operating-loop.svg`} alt="The operating loop identifies bottlenecks, acquires resources, converts them into power, deploys that power toward AI safety, and then reviews the results." width="1200" height="400" />
-      </figure>
-      <ol class="loop-visual-mobile" aria-label="Eshkere Strategy operating loop">
+      <ol class="loop-diagram" aria-label="The operating loop identifies bottlenecks, acquires resources, converts them into power, deploys that power toward AI safety, and then reviews the results.">
         {operatingLoop.map((step, index) => (
-          <li class:list={{ 'is-action': index === operatingLoop.length - 1 }}>
-            <span>{String(index + 1).padStart(2, '0')}</span>
-            {step.shortTitle}
+          <li class:list={{ 'is-update': index === operatingLoop.length - 1 }}>
+            <span class="loop-node-number">{String(index + 1).padStart(2, '0')}</span>
+            <strong>{step.shortTitle}</strong>
+            <span class="loop-node-icon" aria-hidden="true">{index === operatingLoop.length - 1 ? '↺' : '→'}</span>
           </li>
         ))}
       </ol>
@@ -164,4 +181,5 @@ const exclusions = [
       <a class="button button-secondary" href={site.links.githubRepository}>View the working repository <span aria-hidden="true">↗</span></a>
     </div>
   </section>
+  </div>
 </BaseLayout>
