@@ -27,13 +27,15 @@ Do not publish exact spending, savings, runway balances, detailed income assumpt
 
 ## Information architecture
 
-V1 has exactly two authored pages and a standard 404 page:
+The stable V1 product surface has two authored pages and a standard 404 page. Two additional routes are explicitly visual experiments over the Home content:
 
 - `/` — public front door.
 - `/strategy` — deeper explanation of the strategy system.
+- `/cosmic/` — poster-like Cosmic visual experiment using the same curated Home content.
+- `/giorno/` — Cosmic-based Giorno composition using the same curated Home content; it remains a documented placeholder until rights-cleared character artwork is supplied.
 - `/404.html` — standard not-found page.
 
-Do not add About, Projects, Blog, Contact, Now, or other authored pages in V1.
+Do not add About, Projects, Blog, Contact, Now, or other content pages in V1. The experiment routes are alternate presentations, not new information-architecture branches.
 
 ### Home
 
@@ -78,6 +80,10 @@ Use a deep near-black cosmic ground; electric cyan, bubblegum pink, ultraviolet,
 
 The Home hero uses a separate original, text-free generated planet image. Astro produces AVIF and WebP versions with a PNG fallback. Interface text, navigation, buttons, badges, and decorative linework remain HTML and CSS rather than being baked into the artwork. The exact hero copy is “MAXIMIZE HEALTH, PLAY GAMES” with “Health is non-optional. Everything else is a game.” The remainder of the site carries the same visual language with calmer backgrounds and reduced decoration for long-form readability.
 
+The deployed homepage at `/` is the **Current** comparison baseline and must remain visually and functionally stable. `/cosmic/` pushes the supplied mock-up's poster composition further without replacing Current. `/giorno/` shares the Cosmic system and reserves a prominent layered subject position. A compact `CURRENT · COSMIC · GIORNO` selector appears on all three versions and is separate from philosophical/content navigation.
+
+No Giorno Giovanna asset was supplied with the decision. Do not substitute generic anime art or copy an unlicensed image. Keep the designed placeholder until a rights-cleared, transparent user-supplied cutout meeting `web/src/assets/giorno/README.md` is available.
+
 Motion is restrained: slow atmospheric image drift, subtle floating decorations, chromatic hover feedback, intersection-based entrances, and a Strategy-page reading-progress line. Content remains fully available without JavaScript, motion never delays access to information, and `prefers-reduced-motion` disables atmospheric and entrance effects.
 
 Build mobile-first. At 320px, content must remain one-column without horizontal overflow. At wider sizes, use compact grids while preserving readable line lengths. Navigation stays simple without a hamburger unless necessary.
@@ -90,7 +96,7 @@ Use semantic HTML and landmarks, a logical heading hierarchy, keyboard-accessibl
 
 Use Astro, TypeScript, and plain CSS inside `web/`. Produce static output only. Do not add React, Vue, Svelte, Tailwind, a component library, CMS, database, server runtime, authentication, or analytics.
 
-Separate reusable layout/components from pages. Put frequently changing public content—last-updated date, priorities, work records, status labels, public links, and collaboration asks—in `web/src/data/site.ts`. Static explanatory prose may remain in pages or components. Do not dynamically read strategy documents during the build.
+Separate reusable layout/components from pages. Put frequently changing public content—last-updated date, priorities, work records, status labels, public links, and collaboration asks—in `web/src/data/site.ts`. Share the long Home strategy content through a content component, while keeping experiment-specific heroes and styles separate enough to modify or remove independently. Static explanatory prose may remain in pages or components. Do not dynamically read strategy documents during the build.
 
 Use system font stacks. Include canonical URLs, page-specific titles and descriptions, Open Graph metadata, Twitter/X summary metadata, robots indexing, a favicon, and a sitemap if it can be added with minimal configuration. A custom social image is not required.
 
@@ -102,17 +108,17 @@ Deploy the static site through GitHub Pages using GitHub Actions. Configure Astr
 
 V1 is complete when:
 
-- Home, Strategy, and 404 build successfully and follow the specified order.
+- Current Home, Cosmic Home, Giorno Home, Strategy, and 404 build successfully; direct navigation works under the GitHub Pages repository base path.
 - Vadym, Eshkere Strategy, the AI-safety objective, instrumental role of power, financial/runway bottleneck, four-part power model, five acquisition routes, current work statuses, and broader Eshkere distinction are represented accurately.
 - Strategy and GitHub are easy to reach.
 - No accomplishments, confirmed opportunities, or sensitive facts are invented or exposed, and strategy documents are not automatically rendered.
 - First-person language is used when speaking for Vadym, without implying a formal Eshkere organization.
 - Installation, Astro checking, and production build succeed.
-- Internal links work, the Pages workflow is valid, no unnecessary client framework ships, and there is no analytics or external font request.
+- The version selector and internal links work, the Pages workflow is valid, no unnecessary client framework ships, and there is no analytics or external font request.
 - The site works without horizontal overflow at 320px and at ordinary tablet and desktop widths, with keyboard navigation, visible focus, appropriate contrast, reduced-motion support, and semantic structure.
 
 ## Explicit non-goals
 
-Do not implement authentication, a private dashboard, admin UI, CMS, database, financial calculators, automatic opportunity scraping, live application tracking, website agents, payments or donations, newsletter, blog, comments, calendar integration, detailed CV, resume generator, power score, charts, particle-effect demos, team pages, a full Eshkere manifesto, Health/Games pages, multilingual support, a theme switcher, custom domain, analytics, or automatic synchronization from strategy documents.
+Do not implement authentication, a private dashboard, admin UI, CMS, database, financial calculators, automatic opportunity scraping, live application tracking, website agents, payments or donations, newsletter, blog, comments, calendar integration, detailed CV, resume generator, power score, charts, particle-effect demos, team pages, a full Eshkere manifesto, Health/Games pages, multilingual support, a user-preference theme system, custom domain, analytics, or automatic synchronization from strategy documents. The fixed three-way design experiment selector is not a general theme system.
 
 These are deferrals, not a feature backlog. Do not turn them into TODOs without a new product decision.

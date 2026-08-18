@@ -6,6 +6,8 @@ export const site = {
   lastUpdated: "18 August 2026",
   links: {
     home: `${base}/`,
+    cosmic: `${base}/cosmic/`,
+    giorno: `${base}/giorno/`,
     strategy: `${base}/strategy/`,
     githubProfile: "https://github.com/VaigotakuTheScientist",
     githubRepository:

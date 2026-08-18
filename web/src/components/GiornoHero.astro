@@ -1,0 +1,20 @@
+---
+import CosmicHero from './CosmicHero.astro';
+---
+
+<div class="giorno-hero-shell">
+  <CosmicHero>
+    <div
+      slot="subject"
+      class="giorno-art-slot"
+      role="img"
+      aria-label="Placeholder for user-supplied, rights-cleared Giorno Giovanna artwork"
+    >
+      <span class="giorno-art-slot__corner" aria-hidden="true"></span>
+      <p>Giorno artwork</p>
+      <strong>Asset required</strong>
+      <small>Transparent PNG / WebP</small>
+    </div>
+  </CosmicHero>
+  <p class="giorno-placeholder-note">Preview uses a layout marker until a rights-cleared Giorno cutout is supplied.</p>
+</div>

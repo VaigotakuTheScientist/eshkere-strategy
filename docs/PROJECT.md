@@ -143,6 +143,7 @@ This is a reversible operating model, not a settled description of Safe AI Swede
 - 2026-08-16: Make the Eshkere Strategy public website V1 an active deliverable. It is a manually curated public interface—not a repository mirror or the homepage of broader Eshkere—and V1 consists of Home and Strategy pages.
 - 2026-08-18: Implement the website as a first-person public strategy memorandum for AI-safety employers, funders, programs, researchers, and collaborators. Use a confident editorial presentation, two information-design SVGs, and a five-stage bottleneck-to-update operating loop while preserving the static Astro/GitHub Pages architecture.
 - 2026-08-18: Adopt the supplied cosmic hyperpop mock-up as the website's authoritative visual direction—superseding the earlier warm editorial palette and two-SVG imagery constraint without changing the approved product, content, or static Astro/GitHub Pages scope.
+- 2026-08-18: Preserve the deployed homepage at `/` as **Current** and add two explicitly experimental comparisons: **Cosmic** at `/cosmic/` and **Giorno** at `/giorno/`, connected by a small design-version selector. The Giorno experiment must use a rights-cleared user-supplied Giorno Giovanna asset; until one exists, it shows and documents an intentional artwork placeholder.
 
 ## Open questions, not current blockers
 
@@ -159,5 +160,5 @@ This is a reversible operating model, not a settled description of Safe AI Swede
 
 - Website content is manually curated; the website is not a mirror of repository working notes.
 - The website is not the homepage of broader Eshkere, which remains separate and evolving.
-- V1 consists of Home and Strategy pages plus a standard 404 page.
+- The default public interface remains Home and Strategy plus a standard 404 page. Two visual-experiment variants of Home are available at `/cosmic/` and `/giorno/`; they reuse the curated strategy content and do not change the underlying strategy.
 - The detailed, authoritative product specification is `docs/WEBSITE.md`.

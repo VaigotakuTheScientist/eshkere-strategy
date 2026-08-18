@@ -1,0 +1,317 @@
+.poster-hero {
+  --poster-pink: #ff52cf;
+  --poster-cyan: #31e8ff;
+  --poster-violet: #a869ff;
+  --poster-lime: #baff1a;
+  --poster-peach: #ffac77;
+  isolation: isolate;
+  min-height: 100svh;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 49% 18%, rgba(36, 50, 165, 0.2), transparent 30%),
+    radial-gradient(circle at 77% 45%, rgba(214, 37, 190, 0.14), transparent 36%),
+    #020309;
+}
+
+.poster-hero::before,
+.poster-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.poster-hero::before {
+  z-index: 1;
+  opacity: 0.7;
+  background-image:
+    radial-gradient(circle at 7% 46%, rgba(49, 232, 255, 0.9) 0 1px, transparent 2px),
+    radial-gradient(circle at 21% 12%, rgba(255, 82, 207, 0.8) 0 1px, transparent 2px),
+    radial-gradient(circle at 32% 6%, rgba(168, 105, 255, 0.9) 0 1px, transparent 2px),
+    radial-gradient(circle at 44% 13%, rgba(49, 232, 255, 0.8) 0 1px, transparent 2px),
+    radial-gradient(circle at 83% 8%, rgba(255, 82, 207, 0.9) 0 1px, transparent 2px),
+    radial-gradient(circle at 94% 27%, rgba(49, 232, 255, 0.7) 0 1px, transparent 2px),
+    radial-gradient(circle at 89% 62%, rgba(255, 82, 207, 0.7) 0 1px, transparent 2px);
+}
+
+.poster-hero::after {
+  z-index: 4;
+  box-shadow: inset 0 -9rem 9rem #020309, inset 5rem 0 8rem rgba(2, 3, 9, 0.9);
+}
+
+.poster-hero__planet,
+.poster-hero__planet picture,
+.poster-hero__planet img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.poster-hero__planet {
+  z-index: 0;
+  left: 21%;
+  width: 82%;
+  filter: saturate(1.32) contrast(1.08) hue-rotate(-4deg);
+  animation: poster-atmosphere 26s ease-in-out infinite alternate;
+}
+
+.poster-hero__planet img {
+  object-fit: cover;
+  object-position: 62% 38%;
+}
+
+.poster-hero__shade {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(2, 3, 9, 0.92) 0%, rgba(2, 3, 9, 0.42) 38%, transparent 67%),
+    linear-gradient(0deg, #020309 0%, rgba(2, 3, 9, 0.58) 17%, transparent 44%);
+}
+
+.poster-orbits {
+  position: absolute;
+  z-index: 3;
+  inset: 12% -8% 22% 28%;
+  transform: rotate(-7deg);
+  pointer-events: none;
+}
+
+.poster-orbits span {
+  position: absolute;
+  inset: 14% 0 22%;
+  border: 1px solid rgba(255, 82, 207, 0.72);
+  border-left-color: rgba(49, 232, 255, 0.62);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 7px rgba(255, 82, 207, 0.32));
+}
+
+.poster-orbits span:nth-child(2) { inset: 33% 5% 7% -13%; transform: rotate(-10deg); opacity: 0.65; }
+.poster-orbits span:nth-child(3) { inset: 5% -1% 39% 10%; transform: rotate(10deg); opacity: 0.42; }
+
+.poster-symbols,
+.poster-sticker,
+.poster-hero__copy,
+.poster-hero__signature,
+.poster-dock {
+  position: absolute;
+  z-index: 6;
+}
+
+.poster-symbols { inset: 0; pointer-events: none; }
+.symbol { position: absolute; font-style: normal; text-shadow: 0 0 14px currentColor; animation: poster-float 7s ease-in-out infinite; }
+.symbol--one { color: var(--poster-pink); left: 36%; top: 17%; font-size: 1.55rem; }
+.symbol--two { color: var(--poster-violet); left: 79%; top: 11%; font-size: 1.2rem; animation-delay: -1.5s; }
+.symbol--three { color: var(--poster-lime); right: 7.7%; top: 43%; font-size: 2rem; animation-delay: -3s; }
+.symbol--four { color: white; right: 10%; top: 25%; font-size: 1.9rem; }
+.symbol--five { color: var(--poster-cyan); left: 29%; top: 51%; font-size: 1.2rem; animation-delay: -2s; }
+.symbol--six { color: var(--poster-pink); left: 26%; top: 42%; font-size: 1.4rem; animation-delay: -4s; }
+
+.poster-sticker {
+  display: grid;
+  min-width: 8rem;
+  padding: 0.72rem 0.9rem;
+  border: 1px solid rgba(112, 225, 255, 0.7);
+  border-radius: 0.8rem;
+  color: #fff;
+  background: rgba(8, 9, 25, 0.52);
+  box-shadow: 0 0 2rem rgba(255, 82, 207, 0.14);
+  font: 600 0.78rem/1.05 var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  backdrop-filter: blur(9px);
+}
+
+.poster-sticker strong { color: var(--poster-peach); font-weight: 700; }
+.poster-sticker--health { left: 36%; top: 23%; transform: rotate(-11deg); }
+.poster-sticker--level {
+  right: 8.8%;
+  top: 51%;
+  aspect-ratio: 1;
+  min-width: 7.5rem;
+  place-content: center;
+  border-color: rgba(255, 82, 207, 0.75);
+  border-radius: 50%;
+  text-align: center;
+  transform: rotate(8deg);
+}
+.poster-sticker--level i { color: var(--poster-pink); font-style: normal; font-size: 1.4rem; }
+
+.poster-hero__copy {
+  left: clamp(2rem, 3.5vw, 4rem);
+  bottom: clamp(8.5rem, 18vh, 13rem);
+  width: min(90vw, 76rem);
+}
+
+.poster-hero__eyebrow {
+  margin: 0 0 1.35rem;
+  color: var(--poster-cyan);
+  font: 700 0.72rem/1 var(--mono);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.poster-hero h1 {
+  display: grid;
+  margin: 0;
+  color: #fff;
+  font-family: var(--serif);
+  font-size: clamp(4.5rem, 8.15vw, 9rem);
+  font-weight: 400;
+  letter-spacing: -0.055em;
+  line-height: 0.78;
+  text-wrap: nowrap;
+  text-shadow: -2px 0 var(--poster-cyan), 2px 0 var(--poster-pink), 0 0 2rem rgba(196, 88, 255, 0.24);
+}
+
+.poster-hero h1 span:nth-child(2) { margin-left: 0.25rem; }
+
+.poster-hero__support {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.9rem;
+}
+
+.poster-hero__support p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: clamp(1rem, 1.3vw, 1.35rem);
+}
+
+.poster-hero__support a {
+  color: var(--poster-pink);
+  font: 700 0.76rem/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.poster-hero__support a span { display: inline-block; margin-left: 0.5rem; transition: transform 180ms ease; }
+.poster-hero__support a:hover span { transform: translateX(0.3rem); }
+
+.poster-hero__signature {
+  left: clamp(2rem, 3.5vw, 4rem);
+  bottom: 2.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  color: white;
+  font: 700 0.8rem/1 var(--sans);
+  letter-spacing: 0.32em;
+}
+
+.poster-hero__signature > span {
+  display: grid;
+  width: 3.2rem;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid var(--poster-pink);
+  border-radius: 50%;
+  color: var(--poster-pink);
+  box-shadow: 0 0 1.5rem rgba(255, 82, 207, 0.16);
+}
+.poster-hero__signature i { color: var(--poster-cyan); font-style: normal; }
+
+.poster-dock {
+  right: clamp(2rem, 4vw, 4.5rem);
+  bottom: 3rem;
+  display: flex;
+  gap: clamp(0.65rem, 1.4vw, 1.5rem);
+}
+
+.poster-dock a {
+  display: grid;
+  width: clamp(2.8rem, 3.7vw, 3.75rem);
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  background: rgba(4, 5, 14, 0.62);
+  box-shadow: 0 0 0 transparent;
+  transition: color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+.poster-dock a:hover { transform: translateY(-0.25rem); box-shadow: 0 0 1.5rem currentColor; }
+.poster-dock__lime { color: var(--poster-lime) !important; }
+.poster-dock__pink { color: var(--poster-pink) !important; }
+.poster-dock__violet { color: var(--poster-violet) !important; }
+.poster-dock__cyan { color: var(--poster-cyan) !important; }
+.poster-dock__peach { color: var(--poster-peach) !important; }
+
+@keyframes poster-atmosphere {
+  from { transform: scale(1.015) translate3d(0, 0, 0); }
+  to { transform: scale(1.055) translate3d(-0.6%, 0.35%, 0); }
+}
+
+@keyframes poster-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-0.55rem) rotate(4deg); }
+}
+
+:is(body[data-page="/cosmic"], body[data-page="/giorno"]) .home-content {
+  background:
+    radial-gradient(circle at 88% 12%, rgba(255, 79, 199, 0.1), transparent 24rem),
+    radial-gradient(circle at 10% 42%, rgba(45, 238, 255, 0.07), transparent 28rem),
+    #05060f;
+}
+
+:is(body[data-page="/cosmic"], body[data-page="/giorno"]) .content-section {
+  border-top-color: rgba(255, 79, 199, 0.22);
+}
+
+:is(body[data-page="/cosmic"], body[data-page="/giorno"]) .section-label {
+  color: var(--cyan);
+  text-shadow: 0 0 1.2rem rgba(45, 238, 255, 0.25);
+}
+
+:is(body[data-page="/cosmic"], body[data-page="/giorno"]) .section-heading h2 {
+  text-shadow: -0.025em 0 rgba(45, 238, 255, 0.45), 0.025em 0 rgba(255, 79, 199, 0.42);
+}
+
+:is(body[data-page="/cosmic"], body[data-page="/giorno"]) .strategy-card,
+:is(body[data-page="/cosmic"], body[data-page="/giorno"]) .work-card {
+  background: linear-gradient(145deg, rgba(17, 18, 42, 0.86), rgba(7, 8, 20, 0.82));
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.025), 0 1.5rem 4rem rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 58rem) {
+  .poster-hero__planet { left: 15%; width: 106%; height: 78%; }
+  .poster-hero__planet img { object-position: 59% 28%; }
+  .poster-hero__shade { background: linear-gradient(0deg, #020309 24%, rgba(2, 3, 9, 0.15) 69%, rgba(2, 3, 9, 0.32)); }
+  .poster-hero__copy { bottom: 10.2rem; width: calc(100% - 3rem); }
+  .poster-hero h1 { font-size: clamp(3.7rem, 10vw, 6.1rem); line-height: 0.84; text-wrap: balance; }
+  .poster-sticker--health { left: 15%; top: 20%; }
+  .poster-sticker--level { right: 5%; top: 40%; }
+}
+
+@media (max-width: 42rem) {
+  .poster-hero { min-height: 51rem; }
+  .poster-hero::after { box-shadow: inset 0 -11rem 9rem #020309; }
+  .poster-hero__planet { left: 2%; top: 2.5rem; width: 142%; height: 63%; }
+  .poster-hero__planet img { object-position: 55% 25%; }
+  .poster-orbits { inset: 8% -50% 48% -16%; }
+  .poster-hero__copy { left: 1.25rem; bottom: 9.7rem; width: calc(100% - 2.5rem); }
+  .poster-hero__eyebrow { margin-bottom: 0.85rem; }
+  .poster-hero h1 { font-size: clamp(3.05rem, 15vw, 4.45rem); line-height: 0.85; }
+  .poster-hero h1 span:nth-child(2) { max-width: 9ch; }
+  .poster-hero__support { display: grid; gap: 0.8rem; margin-top: 1.2rem; }
+  .poster-hero__support p { max-width: 19rem; font-size: 0.98rem; }
+  .poster-hero__signature { left: 1.25rem; bottom: 2rem; }
+  .poster-dock { right: 1.25rem; bottom: 2.25rem; gap: 0.45rem; }
+  .poster-dock a { width: 2.45rem; }
+  .poster-dock a:nth-child(3), .poster-dock a:nth-child(5) { display: none; }
+  .poster-sticker--health { left: 9%; top: 16%; transform: scale(0.78) rotate(-9deg); }
+  .poster-sticker--level { display: none; }
+  .symbol--three, .symbol--six { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .poster-hero__planet,
+  .symbol { animation: none; }
+  .poster-dock a,
+  .poster-hero__support a span { transition: none; }
+}

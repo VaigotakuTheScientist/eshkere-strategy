@@ -1,0 +1,63 @@
+---
+import { Picture } from 'astro:assets';
+import heroPlanet from '../assets/hero-planet.png';
+import { site } from '../data/site';
+---
+
+<section class="poster-hero poster-hero--cosmic" aria-labelledby="cosmic-title">
+  <div class="poster-hero__planet" aria-hidden="true">
+    <Picture
+      src={heroPlanet}
+      formats={['avif', 'webp']}
+      fallbackFormat="png"
+      widths={[768, 1280, 2048]}
+      sizes="(max-width: 48rem) 150vw, 92vw"
+      alt=""
+      loading="eager"
+      fetchpriority="high"
+    />
+  </div>
+  <div class="poster-hero__shade" aria-hidden="true"></div>
+  <slot name="subject" />
+
+  <div class="poster-orbits" aria-hidden="true">
+    <span></span><span></span><span></span>
+  </div>
+
+  <div class="poster-symbols" aria-hidden="true">
+    <i class="symbol symbol--one">✦</i>
+    <i class="symbol symbol--two">♥</i>
+    <i class="symbol symbol--three">+</i>
+    <i class="symbol symbol--four">✧</i>
+    <i class="symbol symbol--five">◆</i>
+    <i class="symbol symbol--six">♥</i>
+  </div>
+
+  <div class="poster-sticker poster-sticker--health" aria-hidden="true">
+    <span>Health ♡</span><span>first</span><strong>always</strong>
+  </div>
+  <div class="poster-sticker poster-sticker--level" aria-hidden="true">
+    <span>Level up</span><strong>our life</strong><i>♥</i>
+  </div>
+
+  <div class="poster-hero__copy">
+    <p class="poster-hero__eyebrow">Personal strategy / AI safety</p>
+    <h1 id="cosmic-title"><span>MAXIMIZE</span><span>HEALTH, PLAY GAMES</span></h1>
+    <div class="poster-hero__support">
+      <p>Health is non-optional. Everything else is a game.</p>
+      <a href="#objective">Enter the strategy <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+
+  <div class="poster-hero__signature" aria-hidden="true">
+    <span>♥</span><strong>ESHKERE</strong><i>✦</i>
+  </div>
+
+  <nav class="poster-dock" aria-label="Jump to key sections">
+    <a class="poster-dock__lime" href="#now" aria-label="Current priorities"><span aria-hidden="true">⌁</span></a>
+    <a class="poster-dock__pink" href="#power" aria-label="Power model"><span aria-hidden="true">♥</span></a>
+    <a class="poster-dock__violet" href={site.links.strategy} aria-label="Read the strategy"><span aria-hidden="true">╫</span></a>
+    <a class="poster-dock__cyan" href="#work" aria-label="Current work"><span aria-hidden="true">✦</span></a>
+    <a class="poster-dock__peach" href={site.links.githubRepository} aria-label="View the repository"><span aria-hidden="true">▣</span></a>
+  </nav>
+</section>
